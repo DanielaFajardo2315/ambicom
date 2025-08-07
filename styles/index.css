@@ -1,0 +1,28 @@
+@import url('https://fonts.cdnfonts.com/css/gantari');
+
+:root {
+    --color-fondoCajas: #9dbb89;
+    --color-textos: #123718;
+    --color-botones: #f0c05e;
+    --color-titulos: #3d8232;
+    --fuente: 'Gantari', sans-serif;
+}
+
+body {
+    font-family: var(--fuente);
+    color: var(--color-textos);
+}
+
+.boton_navbar {
+    background-color: var(--color-botones);
+    color: var(--color-textos);
+    font-weight: bold;
+}
+
+.boton_navbar:hover {
+    background-color: var(--color-botones);
+}
+
+.barra_navegacion {
+    background-color: var(--color-fondoCajas);
+}

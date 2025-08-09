@@ -2,6 +2,7 @@
 
 :root {
     --color-fondoCajas: #9dbb89;
+    --color-enfasisboton: #d1e782;
     --color-textos: #123718;
     --color-botones: #f0c05e;
     --color-titulos: #3d8232;
@@ -54,18 +55,86 @@ main {
     justify-content: space-between;
 }
 /* -------------- SLIDE IZQUIERDO--------------- */
+.sect_slide_izq {
+    margin-left: 30px;
+}
+
+.contenedor_filtros {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+}
+
+.conte_buscar {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.btn_buscar {
+    background-color: var(--color-fondoCajas);
+    border-radius: 22px;
+}
+
+.btn_buscar:hover {
+    background-color: var(--color-enfasisboton);
+}
 
 .slide_bloq {
     background-color: var(--color-fondoCajas);
     position: sticky;
     top: 6rem;
+    border-radius: 20px;
+}
+
+.lista_filtro {
+    border: 2px solid var(--color-textos);
+    border-radius: 20px;
+    color: var(--color-textos);
+    width: 100%;
+}
+
+.lista_localidades {
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.listas {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.listas li a:hover {
+    background-color: var(--color-enfasisboton);
+}
+
+.btn_filtrar {
+    width: 5rem;
+}
+
+.btn_filtros {
+    margin: auto;
 }
 
 
 /* ---------------- PUBLICACIONES ---------------- */
+.titulo_publicaciones {
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px #123718;
+}
+
+.titulo_publi {
+    color: var(--color-titulos);
+    font-weight: bold;
+    font-style: italic;
+}
+
 .iconos_f_publi {
     display: flex;
     justify-content: space-between;
+    color: var(--color-textos);
 }
 
 .iconos_publi i {
@@ -75,6 +144,32 @@ main {
 
 /* ---------------- SLIDE DERECHO ----------------- */
 
+.sect_slide_der {
+    margin-right: 8px;
+}
+
+.contenedor_eventos {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.text_img_eventos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_prox_eventos {
+    width: 200px;
+}
+
+.btn_info {
+    margin: 10px 0;
+}
 
 /* ----------------------------- FOOTER -------------------------- */
 
@@ -84,11 +179,6 @@ footer{
 
 
 /* ------------- MEDIA QUERIES ---------------- */
-/* @include media-breakpoint-up(sm) {
-  .custom-class {
-    display: block;
-  }
-} */
 
 @media (max-width: 992px) {
     .lista_perfil{

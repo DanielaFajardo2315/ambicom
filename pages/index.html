@@ -28,7 +28,7 @@
   <body>
     <header class="sticky-top">
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg barra_navegacion m-3 mb-1 rounded-6">
+      <nav class="navbar navbar-expand-lg m-3 mb-1 rounded-6 barra_navegacion">
         <!-- Container wrapper -->
         <div class="container-fluid">
           <!-- Toggle button -->
@@ -61,7 +61,7 @@
           <!-- Right elements -->
           <div class="d-flex align-items-center">
             <!-- Icon -->
-            <a class="text-reset me-3" href="#">
+            <a class="text-reset me-3" href="./index.html">
               <i class="fas fa-house"></i>
             </a>
 
@@ -153,16 +153,16 @@
     <main>
       <!-- SLIDE IZQUIERDO -->
       <section class="sect_slide_izq">
-        <div class="row w-100 collapse d-lg-block sidebar slide_bloq">
-          <div class="col-3"> 
+        <div class="row w-100 collapse d-lg-block sidebar rounded-6 slide_bloq">
+          <div class="col-3 contenedor_filtros"> 
             <!-- Filtros -->
             <div
-              class="nav flex-column nav-tabs text-center"
+              class="nav flex-column nav-tabs text-center contenedor_filtros"
               id="v-tabs-tab"
               role="tablist"
               aria-orientation="vertical"
             >
-              <div class="input-group">
+              <div class="input-group conte_buscar">
                 <div class="form-outline" data-mdb-input-init>
                   <input
                     id="search-focus"
@@ -170,11 +170,11 @@
                     id="form1"
                     class="form-control"
                   />
-                  <label class="form-label" for="form1">Search</label>
+                  <label class="form-label barra_buscar" for="form1">Buscar</label>
                 </div>
                 <button
                   type="button"
-                  class="btn btn-primary"
+                  class="btn btn-primary btn_buscar"
                   data-mdb-ripple-init
                 >
                   <i class="fas fa-search"></i>
@@ -182,190 +182,252 @@
               </div>
               <div class="dropdown">
                 <button
-                  class="btn btn-primary dropdown-toggle"
+                  class="btn dropdown-toggle lista_filtro"
                   type="button"
                   id="dropdownMenuButton"
                   data-mdb-dropdown-init
                   data-mdb-ripple-init
                   aria-expanded="false"
                 >
-                  Dropdown button
+                  Eventos
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                <ul class="dropdown-menu listas" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Recolección de residuos</a></li>
+                  <li><a class="dropdown-item" href="#">Limpieza</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Cursos</a>
                   </li>
                 </ul>
               </div>
               <div class="dropdown">
                 <button
-                  class="btn btn-primary dropdown-toggle"
+                  class="btn dropdown-toggle lista_filtro"
                   type="button"
                   id="dropdownMenuButton"
                   data-mdb-dropdown-init
                   data-mdb-ripple-init
                   aria-expanded="false"
                 >
-                  Dropdown button
+                  Localidades
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                <ul class="dropdown-menu listas lista_localidades" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Antonio Nariño</a></li>
+                  <li><a class="dropdown-item" href="#">Barrios Unidos</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Bosa</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Chapinero</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Ciudad Bolívar</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Engativá</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Fontibón</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Kennedy</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">La Candelaria</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Los Mártires</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Puente Aranda</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Rafael Uribe Uribe</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">San Cristobal</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Santa Fe</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Suba</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Sumapaz</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Teusaquillo</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Tunjuelito</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Usaquén</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Usme</a>
                   </li>
                 </ul>
               </div>
               <div class="dropdown">
                 <button
-                  class="btn btn-primary dropdown-toggle"
+                  class="btn dropdown-toggle lista_filtro"
                   type="button"
                   id="dropdownMenuButton"
                   data-mdb-dropdown-init
                   data-mdb-ripple-init
                   aria-expanded="false"
                 >
-                  Dropdown button
+                  Tipo de residuo
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                <ul class="dropdown-menu listas" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Escombros</a></li>
+                  <li><a class="dropdown-item" href="#">Madera</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Muebles</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Tejas plásticas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Colchones</a>
                   </li>
                 </ul>
               </div>
               <div class="dropdown">
                 <button
-                  class="btn btn-primary dropdown-toggle"
+                  class="btn dropdown-toggle lista_filtro"
                   type="button"
                   id="dropdownMenuButton"
                   data-mdb-dropdown-init
                   data-mdb-ripple-init
                   aria-expanded="false"
                 >
-                  Dropdown button
+                  Empresa recolectora
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                <ul class="dropdown-menu listas" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Bogotá Limpia</a></li>
+                  <li><a class="dropdown-item" href="#">Promoambiental</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Lime</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Ciudad Limpia</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Área Limpia</a>
                   </li>
                 </ul>
               </div>
             </div>
             <!-- Filtros -->
-            <button
-              data-mdb-ripple-init
-              type="button"
-              class="btn btn-rounded px-3 me-2 boton_navbar"
-            >
-              Filtrar
-            </button>
+            <div class="btn_filtros">
+              <button
+                data-mdb-ripple-init
+                type="button"
+                class="btn btn-rounded px-3 me-2 boton_navbar btn_filtrar"
+              >
+                Filtrar
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- PUBLICACIONES -->
       <section>
-        <div class="card px-3 pt-3" style="max-width: 32rem">
-          <!-- News block -->
-          <div>
-            <!-- Featured image -->
-            <div
-              class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
-              data-mdb-ripple-color="light"
-            >
-              <img
-                src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp"
-                class="img-fluid"
-              />
-              <a href="#!">
-                <div
-                  class="mask"
-                  style="background-color: rgba(251, 251, 251, 0.15)"
-                ></div>
-              </a>
-            </div>
-            <!-- Article title and description -->
-              <div class="contenido_publi">
-                <h5>This is title of the news</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-                  iste aliquid. Sed id nihil magni, sint vero provident esse numquam
-                  perferendis ducimus dicta adipisci iusto nam temporibus modi animi
-                  laboriosam?
-                </p>
-                <div class="iconos_f_publi">
-                  <div class="iconos_publi">
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-thumbs-up"></i>
-                    <i class="fas fa-thumbs-down"></i>
-                    <i class="fas fa-share-nodes"></i>
-                    <i class="fas fa-message"></i>
-                  </div>
-                  <div class="nombre_usuario_publi">
-                    <span>Publicado por: <div id="name_user"></div></span>
+        <div class="col-11">
+          <h4 class="titulo_publicaciones">Publicaciones recientes</h4>
+          <div class="card px-3 pt-3 mb-5" style="max-width: 32rem">
+            <!-- News block -->
+            <div>
+              <!-- Featured image -->
+              <div
+                class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="../assets/publicacion1.webp"
+                  class="img-fluid" alt="Imagen de una publicación"
+                />
+                <a href="#!">
+                  <div
+                    class="mask"
+                    style="background-color: rgba(251, 251, 251, 0.15)"
+                  ></div>
+                </a>
+              </div>
+              <!-- Article title and description -->
+                <div class="contenido_publi">
+                  <h5 class="titulo_publi">Recuerda Los Horarios De Recolección</h5>
+                  <p>
+                    ¡Bogotá, unidos por una ciudad más limpia!  Recordamos la importancia de sacar tus residuos en los horarios y días establecidos por tu operador de recolección. Pequeñas acciones, grandes cambios. Al disponer correctamente nuestros desechos, contribuimos a una Bogotá más bonita, saludable y sostenible para todos. ¡Consulta los horarios de tu sector y súmate a la ola de civismo ambiental! #BogotaLimpia #RecoleccionDeResiduos #CiudadSostenible #CompromisoCiudadano
+                  </p>
+                  <div class="iconos_f_publi">
+                    <div class="iconos_publi">
+                      <i class="fas fa-heart"></i>
+                      <i class="fas fa-thumbs-up"></i>
+                      <i class="fas fa-thumbs-down"></i>
+                      <i class="fas fa-share-nodes"></i>
+                      <i class="fas fa-message"></i>
+                    </div>
+                    <div class="nombre_usuario_publi">
+                      <span>Publicado por: <div id="name_user"></div></span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            <hr />
+              <hr />
+            </div>
           </div>
-        </div>
-
-        <div class="card px-3 pt-3" style="max-width: 32rem">
-          <!-- News block -->
-          <div>
-            <!-- Featured image -->
-            <div
-              class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
-              data-mdb-ripple-color="light"
-            >
-              <img
-                src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp"
-                class="img-fluid"
-              />
-              <a href="#!">
-                <div
-                  class="mask"
-                  style="background-color: rgba(251, 251, 251, 0.15)"
-                ></div>
-              </a>
-            </div>
-            <!-- Article title and description -->
-              <div class="contenido_publi">
-                <h5>This is title of the news</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-                  iste aliquid. Sed id nihil magni, sint vero provident esse numquam
-                  perferendis ducimus dicta adipisci iusto nam temporibus modi animi
-                  laboriosam?
-                </p>
-                <div class="iconos_f_publi">
-                  <div class="iconos_publi">
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-thumbs-up"></i>
-                    <i class="fas fa-thumbs-down"></i>
-                    <i class="fas fa-share-nodes"></i>
-                    <i class="fas fa-message"></i>
-                  </div>
-                  <div class="nombre_usuario_publi">
-                    <span>Publicado por: <div id="name_user"></div></span>
+          <div class="card px-3 pt-3 mb-5" style="max-width: 32rem">
+            <!-- News block -->
+            <div>
+              <!-- Featured image -->
+              <div
+                class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="../assets/publicacion2.webp"
+                  class="img-fluid" alt="Imagen de una publicación"
+                />
+                <a href="#!">
+                  <div
+                    class="mask"
+                    style="background-color: rgba(251, 251, 251, 0.15)"
+                  ></div>
+                </a>
+              </div>
+              <!-- Article title and description -->
+                <div class="contenido_publi">
+                  <h5 class="titulo_publi">¡Atención San Cristobal!</h5>
+                  <p>
+                    ¿Muebles viejos o electrodomésticos que ya no usas? ¡Este domingo 25 de agosto, únete a la jornada de recolección de residuos voluminosos en San Cristóbal!
+                    Desde las 9:00 a.m. hasta las 2:00 p.m., tendremos puntos habilitados para que los deseches de forma gratuita y responsable. ¡No los dejes en la calle! Ayúdanos a mantener una San Cristóbal más limpia y ordenada.
+                  </p>
+                  <div class="iconos_f_publi">
+                    <div class="iconos_publi">
+                      <i class="fas fa-heart"></i>
+                      <i class="fas fa-thumbs-up"></i>
+                      <i class="fas fa-thumbs-down"></i>
+                      <i class="fas fa-share-nodes"></i>
+                      <i class="fas fa-message"></i>
+                    </div>
+                    <div class="nombre_usuario_publi">
+                      <span>Publicado por: <div id="name_user"></div></span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            <hr />
+              <hr />
+            </div>
           </div>
         </div>
       </section>
 
       <!-- SLIDE DERECHO -->
-      <section>
+      <section class="sect_slide_der">
         <div class="row w-100 collapse d-lg-block sidebar sticky-top slide_bloq">
-          <div class="col-3">
+          <div class="col-3 contenedor_eventos">
             <h4 class="card-title">Próximos eventos</h4>
             <!-- Proximos Eventos- Barra derecha -->
             <div
@@ -374,19 +436,24 @@
               role="tablist"
               aria-orientation="vertical"
             >
-              <div style="width: 18rem;">
-                <div class="texto_sl_derecho">
-                  <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div style="width: 18rem;" class="text_img_eventos">
+                <div class="contatexto_sl_derecho">
+                  <p class="mx-2">Este jueves 03 de abril realizaremos jornadas de Ecopuntos en la localidad de Rafael Uribe junto al operador LIME.
+                  Recibimos sin costo residuos como muebles, tejas plásticas, madera, colchones y escombros.
+                  ¡Evita que terminen ocupando espacio público!</p>
                 </div>
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card card-img-top card-img-bottom" alt="Sunset Over the Sea"/>
+                <img src="../assets/proxEventos.webp" class="card card-img-top card-img-bottom img_prox_eventos" alt="Información de un evento próximo"/>
               </div>
-            <button
-              data-mdb-ripple-init
-              type="button"
-              class="btn btn-rounded px-3 me-2 boton_navbar"
-            >
-              Más información
-            </button>
+              <div>
+              <button
+                data-mdb-ripple-init
+                type="button"
+                class="btn btn-rounded px-3 me-2 boton_navbar btn_info"
+              >
+                Más información
+              </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>

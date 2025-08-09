@@ -8,10 +8,17 @@
     --fuente: 'Gantari', sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: var(--fuente);
     color: var(--color-textos);
 }
+
+/* ----------- HEADER ------------------------- */
 
 .boton_navbar {
     background-color: var(--color-botones);
@@ -25,4 +32,69 @@ body {
 
 .barra_navegacion {
     background-color: var(--color-fondoCajas);
+}
+
+.img_perfil {
+    object-fit: cover;
+}
+
+.lista_perfil {
+    display: none;
+}
+
+.lema {
+    text-align: center;
+    font-style: italic;
+    text-shadow: 2px 2px 5px #123718;
+}
+
+/* ------------------------- MAIN -------------------------- */
+main {
+    display: flex;
+    justify-content: space-between;
+}
+/* -------------- SLIDE IZQUIERDO--------------- */
+
+.slide_bloq {
+    background-color: var(--color-fondoCajas);
+    position: sticky;
+    top: 6rem;
+}
+
+
+/* ---------------- PUBLICACIONES ---------------- */
+.iconos_f_publi {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconos_publi i {
+    margin: 5px;
+}
+
+
+/* ---------------- SLIDE DERECHO ----------------- */
+
+
+/* ----------------------------- FOOTER -------------------------- */
+
+footer{
+    background-color: var(--color-fondoCajas);
+}
+
+
+/* ------------- MEDIA QUERIES ---------------- */
+/* @include media-breakpoint-up(sm) {
+  .custom-class {
+    display: block;
+  }
+} */
+
+@media (max-width: 992px) {
+    .lista_perfil{
+        display: block;
+    }
+    .boton_navbar {
+        display: none;
+    }
 }

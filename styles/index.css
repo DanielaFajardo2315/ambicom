@@ -85,7 +85,6 @@ main {
     background-color: var(--color-fondoCajas);
     position: sticky;
     top: 6rem;
-    border-radius: 20px;
 }
 
 .lista_filtro {
@@ -141,6 +140,32 @@ main {
     margin: 5px;
 }
 
+/* --------------- CAJA DE BÚSQUEDA MOVIL -------------------- */
+.caja_movil {
+    display: none;
+    padding: 10px 20px;
+    margin: 0 18px;
+    height: 100px;
+    background-color: var(--color-fondoCajas);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.div_btn_caja {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton_caja {
+    background-color: var(--color-botones);
+    color: var(--color-textos);
+    font-weight: bold;
+}
+
+.btn_filtrar_caja {
+    display: flex;
+}
+
 
 /* ---------------- SLIDE DERECHO ----------------- */
 
@@ -181,10 +206,16 @@ footer{
 /* ------------- MEDIA QUERIES ---------------- */
 
 @media (max-width: 992px) {
+    main {
+        flex-direction: column;
+    }
     .lista_perfil{
         display: block;
     }
     .boton_navbar {
         display: none;
+    }
+    .caja_movil {
+        display: flex;
     }
 }

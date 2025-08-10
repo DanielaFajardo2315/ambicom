@@ -1,0 +1,109 @@
+
+
+.formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    border-radius: 10px;
+    background: white;
+    /* Agregando borde al formulario */
+    border: 2px solid #9DBD89;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+
+.formulario h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+   border-bottom: 1px solid #9DBD89;
+}
+
+
+.formulario form {
+    padding: 0 40px;
+    box-sizing: border-box;
+    ;
+}
+
+
+form .nombreusuario {
+    position: relative;
+    margin: 20px 0;
+}
+
+
+.nombreusuario label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(99, 98, 98);
+    font-size: 16px;
+    
+}
+
+.nombreusuario input {
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #9DBD89;
+    outline: none;
+    border: 2px solid #9DBD89;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.Recordar {
+    margin: -5px 0 20px 5px;
+    color: #9DBD89;
+    cursor: pointer;
+}
+
+.Recordar:hover {
+    text-decoration: underline;
+}
+
+
+/*contenedor botones*/
+.contenedor-botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/*estilos botones*/
+input[type="submit"] {
+    flex: 1;
+    height: 40px;
+    border: 1px solid #F0C05E;
+    background: #F0C05E;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-izquierda {
+    margin-right: auto; 
+}
+
+.boton-derecha {
+    margin-left: auto;
+}
+
+
+input[type="submit"]:hover {
+    background: #e6ac4a;
+}
+
+
+/* ----------------------------- FOOTER -------------------------- */
+
+footer{
+    background-color: var(--color-fondoCajas);
+}
+

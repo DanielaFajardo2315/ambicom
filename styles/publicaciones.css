@@ -20,9 +20,7 @@ body {
 }
 /* ----------------------------MAIN---------------------------- */
 
-main {
-    padding-top: 120px; /* Ajusta según la altura de tu header */
-}
+
 /* ----------- HEADER ------------------------- */
 
 .boton_navbar {
@@ -114,7 +112,21 @@ main {
 
 
 /* ---------------- PUBLICACIONES ---------------- */
-.titulo_publi {
+
+/* ---Tarjeta de Perfil---- */
+.botonVerPerfil{
+    color: var(--color-textos);
+    background-color: var(--color-fondoCajas);
+    font-weight: 600;
+
+}
+.botonVerPerfil:hover{
+    color: var(--color-textos);
+    border: var(--color-textos);
+}
+
+/* ------ Publicaciones ----- */
+.titulo_publicaciones {
     color: var(--color-titulos);
     font-weight: bold;
     font-style: italic;
@@ -130,9 +142,18 @@ main {
     margin: 5px;
 }
 
+.boton-publi{
+    background-color: var(--color-botones);
+    border-radius: 22px;
+    font-weight: bold;
+    color: var(--color-textos);
+}
 
 /* ---------------- SLIDE DERECHO ----------------- */
 
+.sect_slide_der {
+    margin-right: 30px;
+}
 
 /* ----------------------------- FOOTER -------------------------- */
 

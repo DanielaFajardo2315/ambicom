@@ -28,8 +28,10 @@
   </head>
 
   <body>
-     <!----------------------------------- HEADER ------------------------------------->
-    <header class="fixed-top">
+  
+    <!----------------------------------- HEADER ------------------------------------->
+  
+    <header class="sticky-top">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg m-3 mb-1 rounded-6 barra_navegacion">
         <!-- Container wrapper -->
@@ -64,7 +66,7 @@
           <!-- Right elements -->
           <div class="d-flex align-items-center">
             <!-- Icon -->
-            <a class="text-reset me-3" href="#">
+            <a class="text-reset me-3" href="./index.html">
               <i class="fas fa-house"></i>
             </a>
 
@@ -117,7 +119,7 @@
                 />
               </a>
               <ul
-                class="dropdown-menu dropdown-menu-end"
+                class="dropdown-menu dropdown-menu-end listas"
                 aria-labelledby="navbarDropdownMenuAvatar"
               >
                 <li>
@@ -152,12 +154,12 @@
       <div class="lema"><span>Conectados con el ambiente</span></div>
       <!-- Navbar -->
     </header>
-     <!---------------------------------------- MAIN ------------------------------------>
+
     <main>
-      <!----------- SLIDE IZQUIERDO ------------>
+      <!-- SLIDE IZQUIERDO -->
       <section class="sect_slide_izq">
-        <div class="row w-100 collapse d-lg-block sidebar rounded-6 slide_bloq">
-          <div class="col-3 contenedor_filtros"> 
+        <div class="row w-100 collapse d-lg-block rounded-6 slide_bloq">
+          <div class="col-3 contenedor_filtros">
             <!-- Filtros -->
             <div
               class="nav flex-column nav-tabs text-center contenedor_filtros"
@@ -173,7 +175,9 @@
                     id="form1"
                     class="form-control"
                   />
-                  <label class="form-label barra_buscar" for="form1">Buscar</label>
+                  <label class="form-label barra_buscar" for="form1"
+                    >Buscar</label
+                  >
                 </div>
                 <button
                   type="button"
@@ -194,8 +198,15 @@
                 >
                   Eventos
                 </button>
-                <ul class="dropdown-menu listas" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item" href="#">Recolección de residuos</a></li>
+                <ul
+                  class="dropdown-menu listas"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Recolección de residuos</a
+                    >
+                  </li>
                   <li><a class="dropdown-item" href="#">Limpieza</a></li>
                   <li>
                     <a class="dropdown-item" href="#">Cursos</a>
@@ -213,7 +224,10 @@
                 >
                   Localidades
                 </button>
-                <ul class="dropdown-menu listas lista_localidades" aria-labelledby="dropdownMenuButton">
+                <ul
+                  class="dropdown-menu listas lista_localidades"
+                  aria-labelledby="dropdownMenuButton"
+                >
                   <li><a class="dropdown-item" href="#">Antonio Nariño</a></li>
                   <li><a class="dropdown-item" href="#">Barrios Unidos</a></li>
                   <li>
@@ -283,7 +297,10 @@
                 >
                   Tipo de residuo
                 </button>
-                <ul class="dropdown-menu listas" aria-labelledby="dropdownMenuButton">
+                <ul
+                  class="dropdown-menu listas"
+                  aria-labelledby="dropdownMenuButton"
+                >
                   <li><a class="dropdown-item" href="#">Escombros</a></li>
                   <li><a class="dropdown-item" href="#">Madera</a></li>
                   <li>
@@ -308,7 +325,10 @@
                 >
                   Empresa recolectora
                 </button>
-                <ul class="dropdown-menu listas" aria-labelledby="dropdownMenuButton">
+                <ul
+                  class="dropdown-menu listas"
+                  aria-labelledby="dropdownMenuButton"
+                >
                   <li><a class="dropdown-item" href="#">Bogotá Limpia</a></li>
                   <li><a class="dropdown-item" href="#">Promoambiental</a></li>
                   <li>
@@ -337,130 +357,160 @@
         </div>
       </section>
 
-       <!------------- PUBLICACIONES ------------->  
-      <section> 
-        <div class="card px-3 pt-3 mb-5" style="max-width: 32rem">
-          <!-- News block -->
-          <div>
-            <!-- Featured image -->
-            <div
-              class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
-              data-mdb-ripple-color="light"
-            >
-              <img
-                src="../assets/publicacion1.webp"
-                class="img-fluid"
-              />
-              <a href="#!">
-                <div
-                  class="mask"
-                  style="background-color: rgba(251, 251, 251, 0.15)"
-                ></div>
-              </a>
+      <!------- SECCION CENTRO - TARJETA PERFIL - PUBLICACIONES ------->
+      <section >  
+        <div class="container">
+          <!---------------- TARJETA PERFIL -------------->
+          <div class="container my-3 col-md-11 col-lg-11">
+            <div class="card text-center shadow-sm">
+              <img src="../assets/fotoPerfil.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Foto de perfil" style="width: 120px; height: 120px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Pedro Cortes</h5>  <!-- nombrePerfil -->
+                <p class="card-text text-muted">Administrador y Gestor de Entidad Gubernamental </p>
+                <a href="../pages/perfil.html" class="btn btn-sm btn-rounded botonVerPerfil">Ver perfil</a>
+              </div>
             </div>
-            <!-- Article title and description -->
-              <div class="contenido_publi">
-                <h5 class="titulo_publi">Recuerda Los Horarios De Recolección</h5>
-                <p>
-                  ¡Bogotá, unidos por una ciudad más limpia!  Recordamos la importancia de sacar tus residuos en los horarios y días establecidos por tu operador de recolección. Pequeñas acciones, grandes cambios. Al disponer correctamente nuestros desechos, contribuimos a una Bogotá más bonita, saludable y sostenible para todos. ¡Consulta los horarios de tu sector y súmate a la ola de civismo ambiental! #BogotaLimpia #RecoleccionDeResiduos #CiudadSostenible #CompromisoCiudadano
-                </p>
-                <div class="iconos_f_publi">
-                  <div class="iconos_publi">
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-thumbs-up"></i>
-                    <i class="fas fa-thumbs-down"></i>
-                    <i class="fas fa-share-nodes"></i>
-                    <i class="fas fa-message"></i>
+          </div>
+          
+          <!------------- PUBLICACIONES ------------->  
+          <div class="container-fluid col-sm-12 col-md-11 col-lg-11">
+              <div class="row "></div>
+                <h1 class="titulo_publicaciones">Tus Publicaciones</h1>              
+                <div class="col my-4">                       
+                  <a href="#" class="mx-4  btn btn-sm boton-publi">PLUBLICACIONES </a>
+                  <a href="#" class="mx-4 btn btn-sm boton-publi">REACCIONES </a>
+                </div> 
+              </div>
+              
+              <div class="card px-3 pt-3 mb-5" style="max-width: 32rem">
+                <!-- News block -->
+                <div>
+                  <!-- Featured image -->
+                  <div
+                    class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
+                    data-mdb-ripple-color="light"
+                  >
+                    <img
+                      src="../assets/publicacion1.webp"
+                      class="img-fluid"
+                    />
+                    <a href="#!">
+                      <div
+                        class="mask"
+                        style="background-color: rgba(251, 251, 251, 0.15)"
+                      ></div>
+                    </a>
                   </div>
-                  <div class="nombre_usuario_publi">
-                    <span>Publicado por: <div id="name_user"></div></span>
-                  </div>
+                  <!-- Article title and description -->
+                    <div class="contenido_publi">
+                      <h5 class="titulo_publi">Recuerda Los Horarios De Recolección</h5>
+                      <p>
+                        ¡Bogotá, unidos por una ciudad más limpia!  Recordamos la importancia de sacar tus residuos en los horarios y días establecidos por tu operador de recolección. Pequeñas acciones, grandes cambios. Al disponer correctamente nuestros desechos, contribuimos a una Bogotá más bonita, saludable y sostenible para todos. ¡Consulta los horarios de tu sector y súmate a la ola de civismo ambiental! #BogotaLimpia #RecoleccionDeResiduos #CiudadSostenible #CompromisoCiudadano
+                      </p>
+                      <div class="iconos_f_publi">
+                        <div class="iconos_publi">
+                          <i class="fas fa-heart"></i>
+                          <i class="fas fa-thumbs-up"></i>
+                          <i class="fas fa-thumbs-down"></i>
+                          <i class="fas fa-share-nodes"></i>
+                          <i class="fas fa-message"></i>
+                        </div>
+                        <div class="nombre_usuario_publi">
+                          <span>Publicado por: <div id="name_user"></div></span>
+                        </div>
+                      </div>
+                    </div>
+                  <hr />
                 </div>
               </div>
-            <hr />
-          </div>
-        </div>
 
-        <div class="card px-3 pt-3 mb-5" style="max-width: 32rem">
-          <!-- News block -->
-          <div>
-            <!-- Featured image -->
-            <div
-              class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
-              data-mdb-ripple-color="light"
-            >
-              <img
-                src="../assets/publicacion2.webp"
-                class="img-fluid"
-              />
-              <a href="#!">
-                <div
-                  class="mask"
-                  style="background-color: rgba(251, 251, 251, 0.15)"
-                ></div>
-              </a>
-            </div>
-            <!-- Article title and description -->
-              <div class="contenido_publi">
-                <h5 class="titulo_publi">¡Atención San Cristobal!</h5>
-                <p>
-                  ¿Muebles viejos o electrodomésticos que ya no usas? ¡Este domingo 25 de agosto, únete a la jornada de recolección de residuos voluminosos en San Cristóbal!  
-                  Desde las 9:00 a.m. hasta las 2:00 p.m., tendremos puntos habilitados para que los deseches de forma gratuita y responsable. ¡No los dejes en la calle! Ayúdanos a mantener una San Cristóbal más limpia y ordenada.
-                </p>
-                <div class="iconos_f_publi">
-                  <div class="iconos_publi">
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-thumbs-up"></i>
-                    <i class="fas fa-thumbs-down"></i>
-                    <i class="fas fa-share-nodes"></i>
-                    <i class="fas fa-message"></i>
+              <div class="card px-3 pt-3 mb-5" style="max-width: 32rem">
+                <!-- News block -->
+                <div>
+                  <!-- Featured image -->
+                  <div
+                    class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
+                    data-mdb-ripple-color="light"
+                  >
+                    <img
+                      src="../assets/publicacion2.webp"
+                      class="img-fluid"
+                    />
+                    <a href="#!">
+                      <div
+                        class="mask"
+                        style="background-color: rgba(251, 251, 251, 0.15)"
+                      ></div>
+                    </a>
                   </div>
-                  <div class="nombre_usuario_publi">
-                    <span>Publicado por: <div id="name_user"></div></span>
-                  </div>
+                  <!-- Article title and description -->
+                    <div class="contenido_publi">
+                      <h5 class="titulo_publi">¡Atención San Cristobal!</h5>
+                      <p>
+                        ¿Muebles viejos o electrodomésticos que ya no usas? ¡Este domingo 25 de agosto, únete a la jornada de recolección de residuos voluminosos en San Cristóbal!  
+                        Desde las 9:00 a.m. hasta las 2:00 p.m., tendremos puntos habilitados para que los deseches de forma gratuita y responsable. ¡No los dejes en la calle! Ayúdanos a mantener una San Cristóbal más limpia y ordenada.
+                      </p>
+                      <div class="iconos_f_publi">
+                        <div class="iconos_publi">
+                          <i class="fas fa-heart"></i>
+                          <i class="fas fa-thumbs-up"></i>
+                          <i class="fas fa-thumbs-down"></i>
+                          <i class="fas fa-share-nodes"></i>
+                          <i class="fas fa-message"></i>
+                        </div>
+                        <div class="nombre_usuario_publi">
+                          <span>Publicado por: <div id="name_user"></div></span>
+                        </div>
+                      </div>
+                    </div>
+                  <hr />
                 </div>
               </div>
-            <hr />
+            
           </div>
         </div>
       </section>
+
+       
       <!-- SLIDE DERECHO -->
-      <section class="sect_slide_der">
-        <div class="row w-100 collapse d-lg-block sidebar sticky-top slide_bloq">
-          <div class="col-3 contenedor_eventos">
-            <h4 class="card-title">Próximos eventos</h4>
+      <section class="col-lg-3 col-md-12 d-none d-lg-block mx-3">
+        <div class=" sticky-top pt-120 slide_bloq rounded-6">
+          <div class="container p-4">
+            <h4 class="card-title text-center">Próximos eventos</h4>
             <!-- Proximos Eventos- Barra derecha -->
-            <div
-              class="nav flex-column nav-tabs text-center"
-              id="v-tabs-tab"
-              role="tablist"
-              aria-orientation="vertical"
-            >
-              <div style="width: 18rem;" class="text_img_eventos">
-                <div class="texto_sl_derecho">
-                  <p>Este jueves 03 de abril realizaremos jornadas de Ecopuntos en la localidad de Rafael Uribe junto al operador LIME.
-                  Recibimos sin costo residuos como muebles, tejas plásticas, madera, colchones y escombros.
-                  ¡Evita que terminen ocupando espacio público!</p>
-                </div>
-                <img src="../assets/proxEventos.webp" class="card card-img-top card-img-bottom img_prox_eventos" alt="Información de un evento próximo"/>
-              </div>
-              <div>
-              <button
-                data-mdb-ripple-init
-                type="button"
-                class="btn btn-rounded px-3 me-2 boton_navbar btn_info"
-              >
-                Más información
-              </button>
-              </div>
+            <div class=" text-center py-4">
+              <p >
+                    Este jueves 03 de abril realizaremos jornadas de Ecopuntos
+                    en la localidad de Rafael Uribe junto al operador LIME.
+                    Recibimos sin costo residuos como muebles, tejas plásticas,
+                    madera, colchones y escombros. ¡Evita que terminen ocupando
+                    espacio público!
+                  </p>
+            </div>
+            <div class="text_img_eventos mb-4 ">                
+                
+                <img
+                  src="../assets/proxEventos.webp"
+                  class="card card-img-top card-img-bottom img_prox_eventos"
+                  alt="Información de un evento próximo"
+                />
+            </div>
+            <div>
+                <button
+                  data-mdb-ripple-init
+                  type="button"
+                  class="btn btn-rounded px-3 me-2 boton_navbar btn_info"
+                >
+                  Más información
+                </button>              
+            </div>
           </div>
         </div>
       </section>
-    
     </main>
 
     <!--------------------- PIE DE PAGINA --------------------------->
-    <footer class="fixed-bottom">
+    <footer>
       <!-- Copyright -->
       <div class="text-center p-4 ">
         © 2025 Copyright:
@@ -468,7 +518,13 @@
      </div>
       <!-- Copyright -->
     </footer>
+
     <!-- Scripts -->
+     <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.1.0/mdb.umd.min.js"
+    ></script>
 
 </body>
 </html>

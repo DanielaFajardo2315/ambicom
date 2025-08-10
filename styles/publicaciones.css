@@ -18,7 +18,11 @@ body {
     font-family: var(--fuente);
     color: var(--color-textos);
 }
+/* ----------------------------MAIN---------------------------- */
 
+main {
+    padding-top: 120px; /* Ajusta según la altura de tu header */
+}
 /* ----------- HEADER ------------------------- */
 
 .boton_navbar {

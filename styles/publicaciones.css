@@ -18,10 +18,9 @@ body {
     font-family: var(--fuente);
     color: var(--color-textos);
 }
-/* ----------------------------MAIN---------------------------- */
+/* --------------------------------MAIN-------------------------------- */
 
-
-/* ----------- HEADER ------------------------- */
+/* ------------- HEADER ----------------- */
 
 .boton_navbar {
     background-color: var(--color-botones);
@@ -38,7 +37,7 @@ body {
 }
 
 .img_perfil {
-    object-fit: cover;
+    border: 1px solid var(--color-titulos);
 }
 
 .lista_perfil {
@@ -111,8 +110,34 @@ main {
 }
 
 
-/* ---------------- PUBLICACIONES ---------------- */
 
+/* --------------- CAJA DE BÚSQUEDA MOVIL -------------------- */
+.caja_movil {
+    display: none;
+    padding: 10px 20px;
+    margin: 0 18px;
+    height: 100px;
+    background-color: var(--color-fondoCajas);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.div_btn_caja {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton_caja {
+    background-color: var(--color-botones);
+    color: var(--color-textos);
+    font-weight: bold;
+}
+
+.btn_filtrar_caja {
+    display: flex;
+}
+
+/* ------------------- PUBLICACIONES ------------------ */
 /* ---Tarjeta de Perfil---- */
 .botonVerPerfil{
     color: var(--color-textos);
@@ -121,8 +146,57 @@ main {
 
 }
 .botonVerPerfil:hover{
+    background-color: var(--color-enfasisboton);
     color: var(--color-textos);
     border: var(--color-textos);
+}
+
+/* ---Tarjeta de Perfil---- */
+.contenedor_padre_perfil {
+    width: 100%;
+    padding: 0;
+}
+
+.contenedor_perfil {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0 20px;
+}
+
+.perfil_tarjeta {
+    border: 3px solid var(--color-titulos);
+}
+
+.nombre_tarjeta {
+    font-size: 1.4rem;
+}
+
+.texto_perfil {
+    font-style: italic;
+}
+
+.texto_perfil h5 {
+    font-weight: bold;
+    color: var(--color-textos);
+}
+
+.texto_usuario {
+    font-weight: bold;
+    color: var(--color-titulos);
+}
+
+.texto_numero {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--color-textos);
+}
+
+.portada_tarjeta {
+    border-radius: 10px;
+    border: 2px solid var(--color-textos);
 }
 
 /* ------ Publicaciones ----- */
@@ -130,6 +204,29 @@ main {
     color: var(--color-titulos);
     font-weight: bold;
     font-style: italic;
+}
+
+.coloretq{
+    color: var(--color-textos);
+   
+}
+.caja_btn_publi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btnCancelEditPubli{
+    background-color: var(--color-botones);
+    color: var(--color-textos);
+    border: var(--color-textos);
+}
+
+.btnGuardarEditPubli{
+    background-color: var(--color-fondoCajas);
+    color: var(--color-textos);
+       
 }
 
 .iconos_f_publi {
@@ -149,10 +246,37 @@ main {
     color: var(--color-textos);
 }
 
+.boton-publi:hover {
+    background-color: var(--color-botones);
+}
+
 /* ---------------- SLIDE DERECHO ----------------- */
 
 .sect_slide_der {
-    margin-right: 30px;
+    margin-right: 8px;
+}
+
+.contenedor_eventos {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.text_img_eventos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_prox_eventos {
+    width: 200px;
+}
+
+.btn_info {
+    margin: 10px 0;
 }
 
 /* ----------------------------- FOOTER -------------------------- */
@@ -170,10 +294,16 @@ footer{
 } */
 
 @media (max-width: 992px) {
+    main {
+        flex-direction: column;
+    }
     .lista_perfil{
         display: block;
     }
     .boton_navbar {
         display: none;
+    }
+     .caja_movil {
+        display: flex;
     }
 }

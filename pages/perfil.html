@@ -23,12 +23,12 @@
     />
 
     <!-- Estilos propios -->
-    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/perfil.css" />
   </head>
   <body>
-    <header>
+    <header class="sticky-top">
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg barra_navegacion m-3 mb-1 rounded-6">
+      <nav class="navbar navbar-expand-lg m-3 mb-1 rounded-6 barra_navegacion">
         <!-- Container wrapper -->
         <div class="container-fluid">
           <!-- Toggle button -->
@@ -61,7 +61,7 @@
           <!-- Right elements -->
           <div class="d-flex align-items-center">
             <!-- Icon -->
-            <a class="text-reset me-3" href="#">
+            <a class="text-reset me-3" href="./index.html">
               <i class="fas fa-house"></i>
             </a>
 
@@ -108,20 +108,28 @@
                 <img
                   src="../assets/fotoPerfil.png"
                   class="rounded-circle img_perfil"
-                  height="35"
+                  style="width: 40px; height: 40px; object-fit: cover"
                   alt="Black and White Portrait of a Man"
                   loading="lazy"
                 />
               </a>
               <ul
-                class="dropdown-menu dropdown-menu-end"
+                class="dropdown-menu dropdown-menu-end listas"
                 aria-labelledby="navbarDropdownMenuAvatar"
               >
                 <li>
-                  <a class="dropdown-item lista_perfil" href="#">Mi perfil</a>
+                  <a
+                    class="dropdown-item lista_perfil"
+                    href="../pages/perfil.html"
+                    >Mi perfil</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item lista_perfil" href="#">Salir</a>
+                  <a
+                    class="dropdown-item lista_perfil"
+                    href="../pages/login.html"
+                    >Salir</a
+                  >
                 </li>
               </ul>
             </div>
@@ -149,3 +157,361 @@
       <div class="lema"><span>Conectados con el ambiente</span></div>
       <!-- Navbar -->
     </header>
+
+    <main>
+      <!-- SLIDE IZQUIERDO -->
+      <section class="sect_slide_der">
+        <div
+          class="row w-100 collapse d-lg-block sidebar sticky-top rounded-6 slide_bloq"
+        >
+          <div class="col-3 contenedor_eventos">
+            <h4 class="card-title">Mis datos</h4>
+            <!-- Proximos Eventos- Barra derecha -->
+            <div
+              class="nav flex-column nav-tabs text-center"
+              id="v-tabs-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <div style="width: 18rem" class="text_img_eventos">
+                <div class="contatexto_sl_derecho">
+                  <h6>Nombre</h6>
+                  <p class="mx-2">Pedro Cortes</p>
+                  <h6>Nombre de usuario</h6>
+                  <p class="mx-2">@pedroC007</p>
+                  <h6>Correo</h6>
+                  <p class="mx-2">pedrocortes007@gmail.com</p>
+                  <h6>Teléfono</h6>
+                  <p class="mx-2">+57 316 558 2314</p>
+                </div>
+              </div>
+              <div>
+                <button
+                  data-mdb-ripple-init
+                  type="button"
+                  class="btn btn-rounded px-3 me-2 boton_navbar btn_info"
+                >
+                  Editar perfil
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN CENTRAL -->
+      <section>
+        <!---------------- TARJETA PERFIL -------------->
+        <section>
+          <div
+            class="container my-3 col-md-11 col-lg-11 contenedor_padre_perfil"
+          >
+            <div class="card text-center shadow-sm contenedor_perfil">
+              <img
+                src="../assets/fotoPerfil.png"
+                class="card-img-top rounded-circle mx-auto mt-3 perfil_tarjeta"
+                alt="Foto de perfil"
+                style="width: 90px; height: 90px; object-fit: cover"
+              />
+              <div class="card-body texto_perfil">
+                <h5 class="card-title nombre_tarjeta">Pedro Cortes</h5>
+                <p class="card-text texto_usuario">@pedroC007</p>
+                <p class="card-text texto_numero">10 publicaciones</p>
+              </div>
+              <img
+                src="../assets/portada.webp"
+                class="card-img-top mx-auto mt-3 portada_tarjeta"
+                alt="Foto portada"
+                style="height: 90px; object-fit: cover"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- CAJA DE BÚSQUEDA MOVIL -->
+      <section class="rounded-6 caja_movil_busq">
+        <div class="input-group conte_buscar">
+          <div class="form-outline" data-mdb-input-init>
+            <input
+              id="search-focus"
+              type="search"
+              id="form1"
+              class="form-control"
+            />
+            <label class="form-label barra_buscar" for="form1">Buscar amigos</label>
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary btn_buscar"
+            data-mdb-ripple-init
+          >
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <div class="div_btn_caja">
+          <button
+            data-mdb-ripple-init
+            type="button"
+            class="btn btn-rounded px-3 me-2 boton_caja"
+          >
+            Publicaciones de interés
+          </button>
+          <div class="btn_filtrar_caja">
+            <button
+              data-mdb-ripple-init
+              type="button"
+              class="btn btn-rounded px-3 me-2 boton_caja"
+            >
+              Más
+            </button>
+            <div class="dropdown caja_buscar">
+              <a
+                class="btn dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-mdb-dropdown-init
+                data-mdb-ripple-init
+                aria-expanded="false"
+              >
+              </a>
+
+              <ul
+                class="dropdown-menu listas"
+                aria-labelledby="dropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Amigos</a></li>
+                <li><a class="dropdown-item" href="#">Ubicaciones</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Empresa recolectora</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!-- CAJA MOVIL PUBLICACIONES -->
+        <section class="rounded-6 sticky-top caja_movil div_btn_caja">
+            <h3>Mis publicaciones</h3>
+            <button
+              data-mdb-ripple-init
+              type="button"
+              class="btn btn-rounded px-3 me-2 btn_editar boton_caja"
+            >
+              Editar perfil
+            </button>
+            <a
+              href="./publicaciones.html"
+              class="btn btn-rounded px-3 me-2 boton_caja"
+            >
+              Ver mis publicaciones
+            </a>
+        </section>
+
+        <!-- PUBLICACIONES -->
+        <section>
+          <div class="col-11 container">
+            <h4 class="titulo_publicaciones">Publicaciones recientes</h4>
+            <div class="card px-3 pt-3 mb-5 container" style="max-width: 32rem">
+              <!-- News block -->
+              <div>
+                <!-- Featured image -->
+                <div
+                  class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="../assets/publicacion1.webp"
+                    class="img-fluid"
+                    alt="Imagen de una publicación"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <!-- Article title and description -->
+                <div class="contenido_publi">
+                  <h5 class="titulo_publi">
+                    Recuerda Los Horarios De Recolección
+                  </h5>
+                  <div class="iconos_f_publi">
+                    <div class="iconos_publi">
+                      <i class="fas fa-heart"></i>
+                      <i class="fas fa-thumbs-up"></i>
+                      <i class="fas fa-thumbs-down"></i>
+                      <i class="fas fa-share-nodes"></i>
+                      <i class="fas fa-message"></i>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+              </div>
+            </div>
+            <div class="card px-3 pt-3 mb-5 container" style="max-width: 32rem">
+              <!-- News block -->
+              <div>
+                <!-- Featured image -->
+                <div
+                  class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="../assets/publicacion2.webp"
+                    class="img-fluid"
+                    alt="Imagen de una publicación"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <!-- Article title and description -->
+                <div class="contenido_publi">
+                  <h5 class="titulo_publi">¡Atención San Cristobal!</h5>
+                  <div class="iconos_f_publi">
+                    <div class="iconos_publi">
+                      <i class="fas fa-heart"></i>
+                      <i class="fas fa-thumbs-up"></i>
+                      <i class="fas fa-thumbs-down"></i>
+                      <i class="fas fa-share-nodes"></i>
+                      <i class="fas fa-message"></i>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+              </div>
+            </div>
+            <div class="card px-3 pt-3 mb-5 container" style="max-width: 32rem">
+              <!-- News block -->
+              <div>
+                <!-- Featured image -->
+                <div
+                  class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="../assets/publicacion3.webp"
+                    class="img-fluid"
+                    alt="Imagen de una publicación"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <!-- Article title and description -->
+                <div class="contenido_publi">
+                  <h5 class="titulo_publi">
+                    Dispone tus residuos correctamente
+                  </h5>
+                  <div class="iconos_f_publi">
+                    <div class="iconos_publi">
+                      <i class="fas fa-heart"></i>
+                      <i class="fas fa-thumbs-up"></i>
+                      <i class="fas fa-thumbs-down"></i>
+                      <i class="fas fa-share-nodes"></i>
+                      <i class="fas fa-message"></i>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- SLIDE DERECHO -->
+      <section class="sect_slide_izq">
+        <div class="row w-100 collapse d-lg-block sidebar rounded-6 slide_bloq">
+          <div class="col-3 contenedor_filtros">
+            <!-- Filtros -->
+            <div
+              class="nav flex-column nav-tabs text-center contenedor_filtros"
+              id="v-tabs-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <div class="input-group conte_buscar">
+                <div class="form-outline" data-mdb-input-init>
+                  <input
+                    id="search-focus"
+                    type="search"
+                    id="form1"
+                    class="form-control"
+                  />
+                  <label class="form-label barra_buscar" for="form1"
+                    >Buscar</label
+                  >
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-primary btn_buscar"
+                  data-mdb-ripple-init
+                >
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+              <div class="enlaces_sl_der">
+                <a href="#">Amigos</a>
+              </div>
+              <div class="enlaces_sl_der">
+                <a href="#">Ubicaciones</a>
+              </div>
+              <div class="enlaces_sl_der">
+                <a href="#">Publicaciones de interés</a>
+              </div>
+              <div class="enlaces_sl_der">
+                <a href="#">Empresa recolectora</a>
+              </div>
+            </div>
+            <!-- Filtros -->
+            <div class="conte_botones">
+              <div class="btn_publicar">
+                <button
+                  data-mdb-ripple-init
+                  type="button"
+                  class="btn btn-rounded px-3 me-2 boton_navbar btn_publi"
+                >
+                  Publicar
+                </button>
+              </div>
+              <div class="btn_index">
+                <button
+                  data-mdb-ripple-init
+                  type="button"
+                  class="btn btn-rounded px-3 me-2 boton_navbar btn_inicio"
+                >
+                  Volver al inicio
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Copyright -->
+      <div class="text-center p-4">
+        © 2025 Copyright:
+        <a class="text-reset fw-bold" href="./index.html">Ambicom.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.1.0/mdb.umd.min.js"
+    ></script>
+  </body>
+</html>

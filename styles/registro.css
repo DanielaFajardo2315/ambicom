@@ -8,15 +8,27 @@
   --color-titulos: #3d8232;
   --fuente: "Gantari", sans-serif;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fuente);
+    color: var(--color-textos);
+}
+
 main{
   display: flex;
   flex-direction: column;
   justify-content:center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
+/*logo*/
+
 .logo-container {
-  margin-bottom: 60px;
   width: 100%;
   height: 90px;
   background: white;
@@ -38,62 +50,78 @@ main{
     text-shadow: 2px 2px 5px #123718;
 }
 
+/*formulario recopilacion de datos*/
 .formulario {
   margin: 15px;
   border-radius: 10%;
   background-color: white;
   /* Borde formulario */
-  border: 2px solid var(--color-textos);
+  border: 2px solid;
   box-shadow: 0 4px 8px var(--color-textos);
   padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 20px 80px;
 }
 
-.formulario h1 {
+/*Titulo*/
+
+.cuadro-titulo {
+  width: 100%;
+  height: 50px;
+  background-color: var(--color-fondoCajas);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.cuadro-titulo h1 {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.formulario h2 {
+  font-size: 16px;
+  color: var(--color-textos);
   text-align: center;
-  padding: 0 0 20px 0;
-  border-bottom: 1px solid #9dbd89;
+  margin: 0 0 20px 0;
 }
 
 .formulario form {
-  padding: 0 40px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
-form .nombreusuario {
+/*datos de usuario*/
+
+form .datosusuario {
   position: relative;
-  margin: 20px 0;
+  margin: 15 0px;
 }
 
-.nombreusuario label {
+.datosusuario label {
   display: block;
   margin-bottom: 5px;
-  color: rgb(99, 98, 98);
-  font-size: 16px;
+  color: var(--color-textos);
+  font-size: 14px;
 }
 
-.nombreusuario input {
+.datosusuario input {
   width: 100%;
   padding: 10px;
-  height: 40px;
-  font-size: 16px;
-  background-color: #9dbd89;
-  outline: none;
-  border: 2px solid #9dbd89;
-  border-radius: 5px;
+  height: 35px;
+  font-size: 14px;
+  background-color: var(--color-fondoCajas);
+  border: none;
+  border-radius: 10px;
   box-sizing: border-box;
+  outline: none;
 }
 
-.Recordar {
-  margin: -5px 0 20px 5px;
-  color: #9dbd89;
-  cursor: pointer;
-}
-
-.Recordar:hover {
-  text-decoration: underline;
-}
-
-/*contenedor botones*/
 .contenedor-botones {
   display: flex;
   justify-content: space-between;
@@ -101,32 +129,23 @@ form .nombreusuario {
   margin-top: 20px;
 }
 
-/*estilos botones*/
 input[type="submit"] {
   flex: 1;
-  height: 40px;
-  border: 1px solid #f0c05e;
-  background: #f0c05e;
-  border-radius: 5px;
+  height: 35px;
+  border: 1px solid var(--color-botones);
+  background: var(--color-botones);
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   transition: background-color 0.3s;
-}
-
-.boton-izquierda {
-  margin-right: auto;
-}
-
-.boton-derecha {
-  margin-left: auto;
 }
 
 input[type="submit"]:hover {
   background: #e6ac4a;
 }
 
-/* ----------------------------- FOOTER -------------------------- */
+/*footer*/
 
 footer {
   background-color: var(--color-fondoCajas);
@@ -134,4 +153,5 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+  margin-top: 20px;
 }

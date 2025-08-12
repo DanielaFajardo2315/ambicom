@@ -1,0 +1,312 @@
+@import url('https://fonts.cdnfonts.com/css/gantari');
+
+:root {
+    --color-fondoCajas: #9dbb89;
+    --color-enfasisboton: #d1e782;
+    --color-textos: #123718;
+    --color-botones: #f0c05e;
+    --color-titulos: #3d8232;
+    --fuente: 'Gantari', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fuente);
+    color: var(--color-textos);
+}
+
+/* ----------- HEADER ------------------------- */
+
+.boton_navbar {
+    background-color: var(--color-botones);
+    color: var(--color-textos);
+    font-weight: bold;
+}
+
+.boton_navbar:hover {
+    background-color: var(--color-botones);
+}
+
+.barra_navegacion {
+    background-color: var(--color-fondoCajas);
+}
+
+.img_perfil {
+    border: 1px solid var(--color-titulos);
+}
+
+.lista_perfil {
+    display: none;
+}
+
+.lema {
+    text-align: center;
+    font-style: italic;
+    text-shadow: 2px 2px 5px #123718;
+}
+
+/* ------------------------- MAIN -------------------------- */
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ---------------- SLIDE IZQUIERDO ----------------- */
+
+.sect_slide_der {
+    margin-left: 30px;
+}
+
+.contenedor_eventos {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.contatexto_sl_derecho h6 {
+    font-weight: bold;
+}
+
+.text_img_eventos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+}
+
+.img_prox_eventos {
+    width: 200px;
+}
+
+.btn_info {
+    margin: 10px 0;
+}
+
+.listas {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.listas a {
+    z-index: 2;
+}
+
+/* ---------------- PUBLICACIONES ---------------- */
+/* --------------- CAJA DE BÚSQUEDA MOVIL -------------------- */
+.caja_movil_busq {
+    display: none;
+    padding: 10px 20px;
+    margin: 0 18px 20px 18px;
+    height: 100px;
+    background-color: var(--color-fondoCajas);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.div_btn_caja {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton_caja {
+    background-color: var(--color-botones);
+    color: var(--color-textos);
+    font-weight: bold;
+}
+
+.btn_filtrar_caja {
+    display: flex;
+}
+
+/* --------------- CAJA MOVIL PUBLICACIONES -------------------- */
+.caja_movil {
+    padding: 10px 20px;
+    margin: 0 18px;
+    height: 70px;
+    background-color: var(--color-fondoCajas);
+    position: sticky;
+    top: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.caja_movil h3 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.btn_editar {
+    display: none;
+}
+
+.boton_caja {
+    background-color: var(--color-botones);
+    color: var(--color-textos);
+    font-weight: bold;
+    font-size: 0.6rem;
+}
+
+.boton_caja:hover {
+    background-color: var(--color-botones);
+}
+
+/* ---Tarjeta de Perfil---- */
+.contenedor_padre_perfil {
+    width: 100%;
+}
+
+.contenedor_perfil {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.perfil_tarjeta {
+    border: 3px solid var(--color-titulos);
+}
+
+.nombre_tarjeta {
+    font-size: 1.4rem;
+}
+
+.texto_perfil {
+    font-style: italic;
+}
+
+.texto_perfil h5 {
+    font-weight: bold;
+    color: var(--color-textos);
+}
+
+.texto_usuario {
+    font-weight: bold;
+    color: var(--color-titulos);
+}
+
+.texto_numero {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--color-textos);
+}
+
+.portada_tarjeta {
+    border-radius: 10px;
+    border: 2px solid var(--color-textos);
+}
+
+/* ------ Publicaciones ----- */
+.titulo_publicaciones {
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px #123718;
+}
+
+.titulo_publi {
+    color: var(--color-titulos);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.iconos_f_publi {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-textos);
+}
+
+.iconos_publi i {
+    margin: 5px;
+}
+
+/* -------------- SLIDE DERECHO--------------- */
+.sect_slide_izq {
+    margin-left: 30px;
+}
+
+.contenedor_filtros {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+}
+
+.conte_buscar {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.btn_buscar {
+    background-color: var(--color-fondoCajas);
+    border-radius: 22px;
+}
+
+.btn_buscar:hover {
+    background-color: var(--color-enfasisboton);
+}
+
+.slide_bloq {
+    background-color: var(--color-fondoCajas);
+    position: sticky;
+    top: 6rem;
+}
+
+.enlaces_sl_der {
+    text-align: start;
+}
+
+.enlaces_sl_der a {
+    text-decoration: none;
+    color: var(--color-textos);
+}
+
+.conte_botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+}
+
+
+/* ----------------------------- FOOTER -------------------------- */
+
+footer {
+    background-color: var(--color-fondoCajas);
+}
+
+
+/* ------------- MEDIA QUERIES ---------------- */
+
+@media (max-width: 992px) {
+    main {
+        flex-direction: column;
+    }
+
+    .lista_perfil {
+        display: block;
+    }
+
+    .boton_navbar {
+        display: none;
+    }
+
+    .btn_editar {
+        display: block;
+    }
+    
+    .caja_movil_busq {
+        display: flex;
+    }
+}

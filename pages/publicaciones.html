@@ -113,7 +113,7 @@
                 <img
                   src="../assets/fotoPerfil.png"
                   class="rounded-circle img_perfil"
-                  height="35"
+                  style="width: 40px; height: 40px; object-fit: cover;"
                   alt="Black and White Portrait of a Man"
                   loading="lazy"
                 />
@@ -158,7 +158,7 @@
     <main>
       <!-- SLIDE IZQUIERDO -->
       <section class="sect_slide_izq">
-        <div class="row w-100 collapse d-lg-block rounded-6 slide_bloq">
+        <div class="row w-100 collapse d-lg-block sidebar rounded-6 slide_bloq">
           <div class="col-3 contenedor_filtros">
             <!-- Filtros -->
             <div
@@ -357,152 +357,347 @@
         </div>
       </section>
 
-      <!------- SECCION CENTRO - TARJETA PERFIL - PUBLICACIONES ------->
-      <section >  
-        <div class="container">
-          <!---------------- TARJETA PERFIL -------------->
-          <div class="container my-3 col-md-11 col-lg-11">
-            <div class="card text-center shadow-sm">
-              <img src="../assets/fotoPerfil.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Foto de perfil" style="width: 120px; height: 120px; object-fit: cover;">
-              <div class="card-body">
-                <h5 class="card-title">Pedro Cortes</h5>  <!-- nombrePerfil -->
-                <p class="card-text text-muted">Administrador y Gestor de Entidad Gubernamental </p>
-                <a href="../pages/perfil.html" class="btn btn-sm btn-rounded botonVerPerfil">Ver perfil</a>
-              </div>
-            </div>
+      <!-- CAJA DE BÚSQUEDA MOVIL -->
+      <section class="rounded-6 caja_movil">
+        <div class="input-group conte_buscar">
+          <div class="form-outline" data-mdb-input-init>
+            <input
+              id="search-focus"
+              type="search"
+              id="form1"
+              class="form-control"
+            />
+            <label class="form-label barra_buscar" for="form1">Buscar</label>
           </div>
-          
-          <!------------- PUBLICACIONES ------------->  
-          <div class="container-fluid col-sm-12 col-md-11 col-lg-11">
-              <div class="row "></div>
-                <h1 class="titulo_publicaciones">Tus Publicaciones</h1>              
-                <div class="col my-4">                       
-                  <a href="#" class="mx-4  btn btn-sm boton-publi">PLUBLICACIONES </a>
-                  <a href="#" class="mx-4 btn btn-sm boton-publi">REACCIONES </a>
-                </div> 
-              </div>
-              
-              <div class="card px-3 pt-3 mb-5" style="max-width: 32rem">
-                <!-- News block -->
-                <div>
-                  <!-- Featured image -->
-                  <div
-                    class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
-                    data-mdb-ripple-color="light"
-                  >
-                    <img
-                      src="../assets/publicacion1.webp"
-                      class="img-fluid"
-                    />
-                    <a href="#!">
-                      <div
-                        class="mask"
-                        style="background-color: rgba(251, 251, 251, 0.15)"
-                      ></div>
-                    </a>
-                  </div>
-                  <!-- Article title and description -->
-                    <div class="contenido_publi">
-                      <h5 class="titulo_publi">Recuerda Los Horarios De Recolección</h5>
-                      <p>
-                        ¡Bogotá, unidos por una ciudad más limpia!  Recordamos la importancia de sacar tus residuos en los horarios y días establecidos por tu operador de recolección. Pequeñas acciones, grandes cambios. Al disponer correctamente nuestros desechos, contribuimos a una Bogotá más bonita, saludable y sostenible para todos. ¡Consulta los horarios de tu sector y súmate a la ola de civismo ambiental! #BogotaLimpia #RecoleccionDeResiduos #CiudadSostenible #CompromisoCiudadano
-                      </p>
-                      <div class="iconos_f_publi">
-                        <div class="iconos_publi">
-                          <i class="fas fa-heart"></i>
-                          <i class="fas fa-thumbs-up"></i>
-                          <i class="fas fa-thumbs-down"></i>
-                          <i class="fas fa-share-nodes"></i>
-                          <i class="fas fa-message"></i>
-                        </div>
-                        <div class="nombre_usuario_publi">
-                          <span>Publicado por: <div id="name_user"></div></span>
-                        </div>
-                      </div>
-                    </div>
-                  <hr />
-                </div>
-              </div>
+          <button
+            type="button"
+            class="btn btn-primary btn_buscar"
+            data-mdb-ripple-init
+          >
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <div class="div_btn_caja">
+          <button
+            data-mdb-ripple-init
+            type="button"
+            class="btn btn-rounded px-3 me-2 boton_caja"
+          >
+            Próximos eventos
+          </button>
+          <div class="btn_filtrar_caja">
+            <button
+              data-mdb-ripple-init
+              type="button"
+              class="btn btn-rounded px-3 me-2 boton_caja"
+            >
+              Filtrar
+            </button>
+            <div class="dropdown">
+              <a
+                class="btn dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-mdb-dropdown-init
+                data-mdb-ripple-init
+                aria-expanded="false"
+              >
+              </a>
 
-              <div class="card px-3 pt-3 mb-5" style="max-width: 32rem">
-                <!-- News block -->
-                <div>
-                  <!-- Featured image -->
-                  <div
-                    class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
-                    data-mdb-ripple-color="light"
-                  >
-                    <img
-                      src="../assets/publicacion2.webp"
-                      class="img-fluid"
-                    />
-                    <a href="#!">
-                      <div
-                        class="mask"
-                        style="background-color: rgba(251, 251, 251, 0.15)"
-                      ></div>
-                    </a>
-                  </div>
-                  <!-- Article title and description -->
-                    <div class="contenido_publi">
-                      <h5 class="titulo_publi">¡Atención San Cristobal!</h5>
-                      <p>
-                        ¿Muebles viejos o electrodomésticos que ya no usas? ¡Este domingo 25 de agosto, únete a la jornada de recolección de residuos voluminosos en San Cristóbal!  
-                        Desde las 9:00 a.m. hasta las 2:00 p.m., tendremos puntos habilitados para que los deseches de forma gratuita y responsable. ¡No los dejes en la calle! Ayúdanos a mantener una San Cristóbal más limpia y ordenada.
-                      </p>
-                      <div class="iconos_f_publi">
-                        <div class="iconos_publi">
-                          <i class="fas fa-heart"></i>
-                          <i class="fas fa-thumbs-up"></i>
-                          <i class="fas fa-thumbs-down"></i>
-                          <i class="fas fa-share-nodes"></i>
-                          <i class="fas fa-message"></i>
-                        </div>
-                        <div class="nombre_usuario_publi">
-                          <span>Publicado por: <div id="name_user"></div></span>
-                        </div>
-                      </div>
-                    </div>
-                  <hr />
-                </div>
-              </div>
-            
+              <ul
+                class="dropdown-menu listas"
+                aria-labelledby="dropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
+      <!---------- SECCION CENTRO -TarjetaPerfil- PUBLICACIONES --------->
+      <section class="col">  
+        
+        <!---------------- TARJETA PERFIL -------------->
+        <section>
+          <div
+            class="container my-3 col-md-10 col-lg-10 contenedor_padre_perfil"
+          >
+            <div class="card text-center shadow-sm contenedor_perfil">
+              <img
+                src="../assets/fotoPerfil.png"
+                class="card-img-top rounded-circle mx-auto mt-3 perfil_tarjeta"
+                alt="Foto de perfil"
+                style="width: 90px; height: 90px; object-fit: cover"
+              />
+              <div class="card-body texto_perfil">
+                <h5 class="card-title nombre_tarjeta">Pedro Cortes</h5>
+                <p class="card-text texto_usuario">@pedroC007</p>
+                <p class="card-text texto_numero">10 publicaciones</p>
+              </div>
+              <img
+                src="../assets/portada.webp"
+                class="card-img-top mx-auto mt-3 portada_tarjeta"
+                alt="Foto portada"
+                style="height: 90px; object-fit: cover"
+              />
+            </div>
+          </div>
+        
+        </section>
+        
+        <!--------------- PUBLICACIONES --------------->  
+        <div class="d-flex flex-column align-items-center px-lg-5">
+          <div>
+            <h1 class="titulo_publicaciones">Tus Publicaciones</h1>              
+            <div class="my-4 caja_btn_publi">                       
+              <a href="#" class="mx-4 btn btn-sm boton-publi">PLUBLICACIONES </a>
+              <a href="#" class="mx-4 btn btn-sm boton-publi">INTERESES </a>
+              
+              <!-- Modal Crear Publicacion-->
+              <div>
+
+                <!-- Boton para abrir modal -->
+                <button type="button" class="mx-4 btn btn-sm boton-publi" data-mdb-toggle="modal" data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#crearPublicacionModal">
+                  <i class="fas fa-plus me-2"></i> Nueva Publicación
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="crearPublicacionModal" tabindex="-1" aria-labelledby="crearPublicacionLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      
+                      <!-- Encabezado -->
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="crearPublicacionLabel">Crear publicación</h5>
+                        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Cerrar"></button>
+                      </div>
+
+                      <!-- Cuerpo -->
+                      <div class="modal-body">
+                        <form id="formPublicacion">
+                          <!-- Titulo -->
+                          <div class="mb-3">
+                            <label class="form-label">Título</label>
+                            <input type="text" class="form-control" id="titulo" required>
+                          </div>
+
+                          <!-- Imagen -->
+                          <div class="mb-3">
+                            <label class="form-label">URL de Imagen</label>
+                            <input type="url" class="form-control" id="imagen">
+                          </div>
+
+                          <!-- Autor -->
+                          <div class="mb-3">
+                            <label class="form-label">Autor</label>
+                            <input type="text" class="form-control" id="autor" required>
+                          </div>
+
+                          <!-- Contenido -->
+                          <div class="mb-3">
+                            <label class="form-label">Contenido</label>
+                            <textarea class="form-control" id="contenido" rows="4" required></textarea>
+                          </div>
+
+                          <!-- Etiquetas -->
+                          <div class="mb-3">
+                            <label class="form-label">Etiquetas (separadas por comas)</label>
+                            <input type="text" class="form-control" id="etiquetas">
+                          </div>
+                        </form>
+                      </div>
+
+                      <!-- Pie -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btnCancelEditPubli" data-mdb-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btnGuardarEditPubli" onclick="crearPublicacion()">Guardar publicación</button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Fin Modal Crear Publicacion-->
+            </div> 
+          </div>
+        </div>
+
+        <!-------- SECTION TODAS Cards Publicaciones -------->
+        <div class="feedPublic d-flex flex-column align-items-center" >
+
+          <!-- Card Publicacion -->          
+          <div class="card px-3 pt-3 mb-5 col-md-10 col-lg-8 container position-relative" style="max-width: 32rem">
+            
+            <!-- Header con info del usuario -->
+            <div class="d-flex align-items-start mb-3 ">
+              <!-- Imagen de usuario -->
+              <img src="../assets/fotoPerfil.png" 
+                  class="rounded-circle me-3" 
+                  alt="Usuario" 
+                  style="width: 40px; height: 40px; object-fit: cover;">
+              
+              <!-- Columna con info del usuario -->
+              <div class="flex-grow-1">
+                <h6 class="mb-1 fw-bold">Pedro Cortes</h6>
+                
+                <small class="text-muted d-block">Hace 2 días</small>
+                <div class="mt-1 etiqueta">
+                  <span class="badge coloretq me-1">#BogotaLimpia</span>
+                  <span class="badge coloretq me-1">#RecoleccionDeResiduos</span>
+                  <span class="badge coloretq me-1 ">#CiudadSostenible</span>
+                </div>
+              </div>
+
+              <!-- Dropdown-icono Publicacaciones Opciones -->
+              <div class="dropdown position-absolute end-0">
+                <button class="btn btn-rounded dropdown-toggle shadow-none btnTresPuntos" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" data-mdb-dropdown-init data-mdb-ripple-init aria-expanded="false">
+                  <i class="fas fa-ellipsis-v iconoPuntos"></i>
+                </button>
+                <ul class="dropdown-menu btn-opc-public" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Modificar</a></li>
+                  <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                  <!-- <li><a class="dropdown-item" href="#">Acción 3</a></li> -->
+                </ul>
+              </div>
+              
+            </div> 
+
+            <!-- News block -->
+            <div>
+              <!-- Featured image -->
+              <div
+                class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="../assets/publicacion1.webp"
+                  class="img-fluid"
+                />
+                <a href="#!">
+                  <div
+                    class="mask"
+                    style="background-color: rgba(251, 251, 251, 0.15)"
+                  ></div>
+                </a>
+              </div>
+              <!-- Article title and description -->
+              <div class="contenido_publi">
+                <h5 class="titulo_publi">Recuerda Los Horarios De Recolección</h5>
+                <p>
+                  ¡Bogotá, unidos por una ciudad más limpia!  Recordamos la importancia de sacar tus residuos en los horarios y días establecidos por tu operador de recolección. Pequeñas acciones, grandes cambios. Al disponer correctamente nuestros desechos, contribuimos a una Bogotá más bonita, saludable y sostenible para todos. ¡Consulta los horarios de tu sector y súmate a la ola de civismo ambiental! #BogotaLimpia #RecoleccionDeResiduos #CiudadSostenible #CompromisoCiudadano
+                </p>
+                <div class="iconos_f_publi">
+                  <div class="iconos_publi">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-thumbs-up"></i>
+                    <i class="fas fa-thumbs-down"></i>
+                    <i class="fas fa-share-nodes"></i>
+                    <i class="fas fa-message"></i>
+                  </div>
+                  <div class="nombre_usuario_publi">
+                    <span>Publicado por: <div id="name_user"></div></span>
+                  </div>
+                </div>
+              </div>
+              <hr />
+            </div>
+          </div>
+            
+            <div class="card px-2 pt-3 mb-5 col-12 col-md-8 col-lg-6">
+              <!-- News block -->
+              <div>
+                <!-- Featured image -->
+                <div
+                  class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="../assets/publicacion2.webp"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <!-- Article title and description -->
+                <div class="contenido_publi">
+                  <h5 class="titulo_publi">¡Atención San Cristobal!</h5>
+                  <p>
+                    ¿Muebles viejos o electrodomésticos que ya no usas? ¡Este domingo 25 de agosto, únete a la jornada de recolección de residuos voluminosos en San Cristóbal!  
+                    Desde las 9:00 a.m. hasta las 2:00 p.m., tendremos puntos habilitados para que los deseches de forma gratuita y responsable. ¡No los dejes en la calle! Ayúdanos a mantener una San Cristóbal más limpia y ordenada.
+                  </p>
+                  <!-- Iconos Reacciones -->
+                  <div class="iconos_f_publi">                        
+                    <div class="iconos_publi">
+                      <i class="fas fa-heart"></i>
+                      <i class="fas fa-thumbs-up"></i>
+                      <i class="fas fa-thumbs-down"></i>
+                      <i class="fas fa-share-nodes"></i>
+                      <i class="fas fa-message"></i>
+                    </div>
+                    <div class="nombre_usuario_publi">
+                      <span>Publicado por: <div id="name_user"></div></span>
+                    </div>
+                  </div>
+                </div>
+                <hr/>
+              </div>
+            </div> 
+
+        </div>    
+        <!-- Cards Publicaciones -->
+      </section>
+
        
       <!-- SLIDE DERECHO -->
-      <section class="col-lg-3 col-md-12 d-none d-lg-block mx-3">
-        <div class=" sticky-top pt-120 slide_bloq rounded-6">
-          <div class="container p-4">
-            <h4 class="card-title text-center">Próximos eventos</h4>
+      <section class="sect_slide_der">
+        <div
+          class="row w-100 collapse d-lg-block sidebar sticky-top rounded-6 slide_bloq"
+        >
+          <div class="col-md-3 contenedor_eventos">
+            <h4 class="card-title">Próximos eventos</h4>
             <!-- Proximos Eventos- Barra derecha -->
-            <div class=" text-center py-4">
-              <p >
+            <div
+              class="nav flex-column nav-tabs text-center"
+              id="v-tabs-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <div style="width: 18rem" class="text_img_eventos">
+                <div class="contatexto_sl_derecho">
+                  <p class="mx-2">
                     Este jueves 03 de abril realizaremos jornadas de Ecopuntos
                     en la localidad de Rafael Uribe junto al operador LIME.
                     Recibimos sin costo residuos como muebles, tejas plásticas,
                     madera, colchones y escombros. ¡Evita que terminen ocupando
                     espacio público!
                   </p>
-            </div>
-            <div class="text_img_eventos mb-4 ">                
-                
+                </div>
                 <img
                   src="../assets/proxEventos.webp"
                   class="card card-img-top card-img-bottom img_prox_eventos"
                   alt="Información de un evento próximo"
                 />
-            </div>
-            <div>
+              </div>
+              <div>
                 <button
                   data-mdb-ripple-init
                   type="button"
                   class="btn btn-rounded px-3 me-2 boton_navbar btn_info"
                 >
                   Más información
-                </button>              
+                </button>
+              </div>
             </div>
           </div>
         </div>

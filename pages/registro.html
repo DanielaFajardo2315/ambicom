@@ -43,20 +43,21 @@
                 </div>
                 <div class="datosusuario">
                     <label>Nombres y Apellidos</label>
-                    <input type="text" required>
+                    <input type="text" id="name" required>
                 </div>
                 <div class="datosusuario">
                     <label>Crear una contraseña</label>
-                    <input type="password" required>
+                    <input type="password" id="password" required>
                 </div>
                 <div class="datosusuario">
                     <label>Confirmar Contraseña</label>
-                    <input type="password" required>
+                    <input type="password" id="confirm" required>
                 </div>
+                <p id="mensaje"></p>
                 <!-- <div class="contenedor botones"></div>  -->
                 <div class="contenedor-botones">
-                    <input type="submit" value="Recuerdame" class="boton-izquierdo">
-                    <input type="submit" value="Ingresar" class="boton-derecha">
+                    <input type="submit" value="Volver" class="boton-izquierdo" onclick="volver()">
+                    <input type="submit" value="Validar" class="boton-derecha" onclick="validar(event)">
                 </div>
         </div>
         </form>
@@ -64,21 +65,17 @@
     </main>
 
 
-
-
     <footer>
 
         <!-- Copyright -->
         <div class="text-center p-4">
             © 2025 Copyright:
-            <a class="text-reset fw-bold" href="./index.html">Ambicom.com</a>
+            <a class="text-reset fw-bold" href="./login.html">Ambicom.com</a>
         </div>
-
-        
     </footer>
    
 
-
+    <script src="../script/registro.js"></script>
 </body>
 
 </html>

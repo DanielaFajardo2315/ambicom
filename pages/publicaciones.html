@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
       rel="shortcut icon"
       href="../assets/favicon.ico"
       type="image/x-icon"
@@ -24,13 +24,11 @@
 
     <!-- Estilos propios Publicaciones-->
     <link rel="stylesheet" href="../styles/publicaciones.css" />
-
   </head>
 
   <body>
-  
     <!----------------------------------- HEADER ------------------------------------->
-  
+
     <header class="sticky-top">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg m-3 mb-1 rounded-6 barra_navegacion">
@@ -52,7 +50,10 @@
           <!-- Collapsible wrapper -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Navbar brand -->
-            <a class="navbar-brand ms-5 mt-2 mt-lg-0" href="#">
+            <a
+              class="navbar-brand ms-5 mt-2 mt-lg-0"
+              href="../pages/index.html"
+            >
               <img
                 src="../assets/logoambicom.png"
                 height="50"
@@ -86,17 +87,21 @@
                 >
               </a>
               <ul
-                class="dropdown-menu dropdown-menu-end"
+                class="dropdown-menu dropdown-menu-end list_notif"
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="#">Some news</a>
+                  <a class="dropdown-item" href="#">Hay un nuevo evento</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Another news</a>
+                  <a class="dropdown-item" href="#"
+                    >@henryV008 le gustó tu publicación</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#"
+                    >Tienes notificaciones nuevas</a
+                  >
                 </li>
               </ul>
             </div>
@@ -113,7 +118,7 @@
                 <img
                   src="../assets/fotoPerfil.png"
                   class="rounded-circle img_perfil"
-                  style="width: 40px; height: 40px; object-fit: cover;"
+                  style="width: 40px; height: 40px; object-fit: cover"
                   alt="Black and White Portrait of a Man"
                   loading="lazy"
                 />
@@ -123,10 +128,10 @@
                 aria-labelledby="navbarDropdownMenuAvatar"
               >
                 <li>
-                  <a class="dropdown-item lista_perfil" href="#">Mi perfil</a>
+                  <a class="dropdown-item lista_perfil" href="./perfil.html">Mi perfil</a>
                 </li>
                 <li>
-                  <a class="dropdown-item lista_perfil" href="#">Salir</a>
+                  <a class="dropdown-item lista_perfil" href="./login.html">Salir</a>
                 </li>
               </ul>
             </div>
@@ -135,6 +140,7 @@
                 data-mdb-ripple-init
                 type="button"
                 class="btn btn-rounded px-3 me-2 boton_navbar"
+                onclick="perfil()"
               >
                 Mi perfil
               </button>
@@ -142,6 +148,7 @@
                 data-mdb-ripple-init
                 type="button"
                 class="btn btn-rounded me-3 boton_navbar"
+                onclick="salir()"
               >
                 Salir
               </button>
@@ -173,7 +180,7 @@
                     id="search-focus"
                     type="search"
                     id="form1"
-                    class="form-control"
+                    class="form-control entrada_sl_izq"
                   />
                   <label class="form-label barra_buscar" for="form1"
                     >Buscar</label
@@ -182,6 +189,7 @@
                 <button
                   type="button"
                   class="btn btn-primary btn_buscar"
+                  onclick="buscar()"
                   data-mdb-ripple-init
                 >
                   <i class="fas fa-search"></i>
@@ -189,9 +197,9 @@
               </div>
               <div class="dropdown">
                 <button
-                  class="btn dropdown-toggle lista_filtro"
+                  class="btn dropdown-toggle lista_filtro btnFiltro"
                   type="button"
-                  id="dropdownMenuButton"
+                  id="dropdownMenuButton1"
                   data-mdb-dropdown-init
                   data-mdb-ripple-init
                   aria-expanded="false"
@@ -203,13 +211,13 @@
                   aria-labelledby="dropdownMenuButton"
                 >
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item elementoLista1" href="#"
                       >Recolección de residuos</a
                     >
                   </li>
-                  <li><a class="dropdown-item" href="#">Limpieza</a></li>
+                  <li><a class="dropdown-item elementoLista1" href="#">Limpieza</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Cursos</a>
+                    <a class="dropdown-item elementoLista1" href="#">Cursos</a>
                   </li>
                 </ul>
               </div>
@@ -217,7 +225,7 @@
                 <button
                   class="btn dropdown-toggle lista_filtro"
                   type="button"
-                  id="dropdownMenuButton"
+                  id="dropdownMenuButton2"
                   data-mdb-dropdown-init
                   data-mdb-ripple-init
                   aria-expanded="false"
@@ -228,61 +236,61 @@
                   class="dropdown-menu listas lista_localidades"
                   aria-labelledby="dropdownMenuButton"
                 >
-                  <li><a class="dropdown-item" href="#">Antonio Nariño</a></li>
-                  <li><a class="dropdown-item" href="#">Barrios Unidos</a></li>
+                  <li><a class="dropdown-item elementoLista2" href="#">Antonio Nariño</a></li>
+                  <li><a class="dropdown-item elementoLista2" href="#">Barrios Unidos</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Bosa</a>
+                    <a class="dropdown-item elementoLista2" href="#">Bosa</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Chapinero</a>
+                    <a class="dropdown-item elementoLista2" href="#">Chapinero</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Ciudad Bolívar</a>
+                    <a class="dropdown-item elementoLista2" href="#">Ciudad Bolívar</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Engativá</a>
+                    <a class="dropdown-item elementoLista2" href="#">Engativá</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Fontibón</a>
+                    <a class="dropdown-item elementoLista2" href="#">Fontibón</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Kennedy</a>
+                    <a class="dropdown-item elementoLista2" href="#">Kennedy</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">La Candelaria</a>
+                    <a class="dropdown-item elementoLista2" href="#">La Candelaria</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Los Mártires</a>
+                    <a class="dropdown-item elementoLista2" href="#">Los Mártires</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Puente Aranda</a>
+                    <a class="dropdown-item elementoLista2" href="#">Puente Aranda</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Rafael Uribe Uribe</a>
+                    <a class="dropdown-item elementoLista2" href="#">Rafael Uribe Uribe</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">San Cristobal</a>
+                    <a class="dropdown-item elementoLista2" href="#">San Cristobal</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Santa Fe</a>
+                    <a class="dropdown-item elementoLista2" href="#">Santa Fe</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Suba</a>
+                    <a class="dropdown-item elementoLista2" href="#">Suba</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Sumapaz</a>
+                    <a class="dropdown-item elementoLista2" href="#">Sumapaz</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Teusaquillo</a>
+                    <a class="dropdown-item elementoLista2" href="#">Teusaquillo</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Tunjuelito</a>
+                    <a class="dropdown-item elementoLista2" href="#">Tunjuelito</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Usaquén</a>
+                    <a class="dropdown-item elementoLista2" href="#">Usaquén</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Usme</a>
+                    <a class="dropdown-item elementoLista2" href="#">Usme</a>
                   </li>
                 </ul>
               </div>
@@ -290,7 +298,7 @@
                 <button
                   class="btn dropdown-toggle lista_filtro"
                   type="button"
-                  id="dropdownMenuButton"
+                  id="dropdownMenuButton3"
                   data-mdb-dropdown-init
                   data-mdb-ripple-init
                   aria-expanded="false"
@@ -301,16 +309,16 @@
                   class="dropdown-menu listas"
                   aria-labelledby="dropdownMenuButton"
                 >
-                  <li><a class="dropdown-item" href="#">Escombros</a></li>
-                  <li><a class="dropdown-item" href="#">Madera</a></li>
+                  <li><a class="dropdown-item elementoLista3" href="#">Escombros</a></li>
+                  <li><a class="dropdown-item elementoLista3" href="#">Madera</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Muebles</a>
+                    <a class="dropdown-item elementoLista3" href="#">Muebles</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Tejas plásticas</a>
+                    <a class="dropdown-item elementoLista3" href="#">Tejas plásticas</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Colchones</a>
+                    <a class="dropdown-item elementoLista3" href="#">Colchones</a>
                   </li>
                 </ul>
               </div>
@@ -318,7 +326,7 @@
                 <button
                   class="btn dropdown-toggle lista_filtro"
                   type="button"
-                  id="dropdownMenuButton"
+                  id="dropdownMenuButton4"
                   data-mdb-dropdown-init
                   data-mdb-ripple-init
                   aria-expanded="false"
@@ -329,16 +337,16 @@
                   class="dropdown-menu listas"
                   aria-labelledby="dropdownMenuButton"
                 >
-                  <li><a class="dropdown-item" href="#">Bogotá Limpia</a></li>
-                  <li><a class="dropdown-item" href="#">Promoambiental</a></li>
+                  <li><a class="dropdown-item elementoLista4" href="#">Bogotá Limpia</a></li>
+                  <li><a class="dropdown-item elementoLista4" href="#">Promoambiental</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Lime</a>
+                    <a class="dropdown-item elementoLista4" href="#">Lime</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Ciudad Limpia</a>
+                    <a class="dropdown-item elementoLista4" href="#">Ciudad Limpia</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Área Limpia</a>
+                    <a class="dropdown-item elementoLista4" href="#">Área Limpia</a>
                   </li>
                 </ul>
               </div>
@@ -409,10 +417,10 @@
                 class="dropdown-menu listas"
                 aria-labelledby="dropdownMenuLink"
               >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Localidad</a></li>
+                <li><a class="dropdown-item" href="#">Empresa Recolectora</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Eventos</a>
                 </li>
               </ul>
             </div>
@@ -421,8 +429,7 @@
       </section>
 
       <!---------- SECCION CENTRO -TarjetaPerfil- PUBLICACIONES --------->
-      <section class="col">  
-        
+      <section class="col">
         <!---------------- TARJETA PERFIL -------------->
         <section>
           <div
@@ -448,34 +455,53 @@
               />
             </div>
           </div>
-        
         </section>
-        
-        <!--------------- PUBLICACIONES --------------->  
+
+        <!--------------- PUBLICACIONES --------------->
         <div class="d-flex flex-column align-items-center px-lg-5">
           <div>
-            <h1 class="titulo_publicaciones">Tus Publicaciones</h1>              
-            <div class="my-4 caja_btn_publi">                       
-              <a href="#" class="mx-4 btn btn-sm boton-publi">PLUBLICACIONES </a>
+            <h1 class="titulo_publicaciones">Tus Publicaciones</h1>
+            <div class="my-4 caja_btn_publi">
+              <a href="#" class="mx-4 btn btn-sm boton-publi"
+                >PLUBLICACIONES
+              </a>
               <a href="#" class="mx-4 btn btn-sm boton-publi">INTERESES </a>
-              
+
               <!-- Modal Crear Publicacion-->
               <div>
-
                 <!-- Boton para abrir modal -->
-                <button type="button" class="mx-4 btn btn-sm boton-publi" data-mdb-toggle="modal" data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#crearPublicacionModal">
+                <button
+                  type="button"
+                  class="mx-4 btn btn-sm boton-publi"
+                  data-mdb-toggle="modal"
+                  data-mdb-ripple-init
+                  data-mdb-modal-init
+                  data-mdb-target="#crearPublicacionModal"
+                >
                   <i class="fas fa-plus me-2"></i> Nueva Publicación
                 </button>
 
                 <!-- Modal -->
-                <div class="modal fade" id="crearPublicacionModal" tabindex="-1" aria-labelledby="crearPublicacionLabel" aria-hidden="true">
+                <div
+                  class="modal fade"
+                  id="crearPublicacionModal"
+                  tabindex="-1"
+                  aria-labelledby="crearPublicacionLabel"
+                  aria-hidden="true"
+                >
                   <div class="modal-dialog modal-lg">
                     <div class="modal-content">
-                      
                       <!-- Encabezado -->
                       <div class="modal-header">
-                        <h5 class="modal-title" id="crearPublicacionLabel">Crear publicación</h5>
-                        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Cerrar"></button>
+                        <h5 class="modal-title" id="crearPublicacionLabel">
+                          Crear publicación
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-mdb-dismiss="modal"
+                          aria-label="Cerrar"
+                        ></button>
                       </div>
 
                       <!-- Cuerpo -->
@@ -484,90 +510,140 @@
                           <!-- Titulo -->
                           <div class="mb-3">
                             <label class="form-label">Título</label>
-                            <input type="text" class="form-control" id="titulo" required>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="titulo"
+                              required
+                            />
                           </div>
 
                           <!-- Imagen -->
                           <div class="mb-3">
                             <label class="form-label">URL de Imagen</label>
-                            <input type="url" class="form-control" id="imagen">
+                            <input
+                              type="url"
+                              class="form-control"
+                              id="imagen"
+                            />
                           </div>
 
                           <!-- Autor -->
                           <div class="mb-3">
                             <label class="form-label">Autor</label>
-                            <input type="text" class="form-control" id="autor" required>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="autor"
+                              required
+                            />
                           </div>
 
                           <!-- Contenido -->
                           <div class="mb-3">
                             <label class="form-label">Contenido</label>
-                            <textarea class="form-control" id="contenido" rows="4" required></textarea>
+                            <textarea
+                              class="form-control"
+                              id="contenido"
+                              rows="4"
+                              required
+                            ></textarea>
                           </div>
 
                           <!-- Etiquetas -->
                           <div class="mb-3">
-                            <label class="form-label">Etiquetas (separadas por comas)</label>
-                            <input type="text" class="form-control" id="etiquetas">
+                            <label class="form-label"
+                              >Etiquetas (separadas por comas)</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="etiquetas"
+                            />
                           </div>
                         </form>
                       </div>
 
                       <!-- Pie -->
                       <div class="modal-footer">
-                        <button type="button" class="btn btnCancelEditPubli" data-mdb-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btnGuardarEditPubli" onclick="crearPublicacion()">Guardar publicación</button>
+                        <button
+                          type="button"
+                          class="btn btnCancelEditPubli"
+                          data-mdb-dismiss="modal"
+                        >
+                          Cancelar
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btnGuardarEditPubli"
+                          onclick="crearPublicacion()"
+                        >
+                          Guardar publicación
+                        </button>
                       </div>
-
                     </div>
                   </div>
                 </div>
-
               </div>
               <!-- Fin Modal Crear Publicacion-->
-            </div> 
+            </div>
           </div>
         </div>
 
         <!-------- SECTION TODAS Cards Publicaciones -------->
-        <div class="feedPublic d-flex flex-column align-items-center" >
-
-          <!-- Card Publicacion -->          
-          <div class="card px-3 pt-3 mb-5 col-md-10 col-lg-8 container position-relative" style="max-width: 32rem">
-            
+        <div class="feedPublic d-flex flex-column align-items-center" id="contenedorTarjetas">
+          <!-- Card Publicacion -->
+          <div
+            class="card px-3 pt-3 mb-5 col-md-10 col-lg-8 container position-relative"
+            style="max-width: 32rem"
+          >
             <!-- Header con info del usuario -->
-            <div class="d-flex align-items-start mb-3 ">
+            <div class="d-flex align-items-start mb-3">
               <!-- Imagen de usuario -->
-              <img src="../assets/fotoPerfil.png" 
-                  class="rounded-circle me-3" 
-                  alt="Usuario" 
-                  style="width: 40px; height: 40px; object-fit: cover;">
-              
+              <img
+                src="../assets/fotoPerfil.png"
+                class="rounded-circle me-3"
+                alt="Usuario"
+                style="width: 40px; height: 40px; object-fit: cover"
+              />
+
               <!-- Columna con info del usuario -->
               <div class="flex-grow-1">
                 <h6 class="mb-1 fw-bold">Pedro Cortes</h6>
-                
+
                 <small class="text-muted d-block">Hace 2 días</small>
                 <div class="mt-1 etiqueta">
                   <span class="badge coloretq me-1">#BogotaLimpia</span>
-                  <span class="badge coloretq me-1">#RecoleccionDeResiduos</span>
-                  <span class="badge coloretq me-1 ">#CiudadSostenible</span>
+                  <span class="badge coloretq me-1"
+                    >#RecoleccionDeResiduos</span
+                  >
+                  <span class="badge coloretq me-1">#CiudadSostenible</span>
                 </div>
               </div>
 
               <!-- Dropdown-icono Publicacaciones Opciones -->
               <div class="dropdown position-absolute end-0">
-                <button class="btn btn-rounded dropdown-toggle shadow-none btnTresPuntos" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" data-mdb-dropdown-init data-mdb-ripple-init aria-expanded="false">
+                <button
+                  class="btn btn-rounded dropdown-toggle shadow-none btnTresPuntos"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-mdb-toggle="dropdown"
+                  data-mdb-dropdown-init
+                  data-mdb-ripple-init
+                  aria-expanded="false"
+                >
                   <i class="fas fa-ellipsis-v iconoPuntos"></i>
                 </button>
-                <ul class="dropdown-menu btn-opc-public" aria-labelledby="dropdownMenuButton">
+                <ul
+                  class="dropdown-menu btn-opc-public"
+                  aria-labelledby="dropdownMenuButton"
+                >
                   <li><a class="dropdown-item" href="#">Modificar</a></li>
                   <li><a class="dropdown-item" href="#">Eliminar</a></li>
                   <!-- <li><a class="dropdown-item" href="#">Acción 3</a></li> -->
                 </ul>
               </div>
-              
-            </div> 
+            </div>
 
             <!-- News block -->
             <div>
@@ -576,10 +652,7 @@
                 class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
                 data-mdb-ripple-color="light"
               >
-                <img
-                  src="../assets/publicacion1.webp"
-                  class="img-fluid"
-                />
+                <img src="../assets/publicacion1.webp" class="img-fluid" />
                 <a href="#!">
                   <div
                     class="mask"
@@ -589,76 +662,56 @@
               </div>
               <!-- Article title and description -->
               <div class="contenido_publi">
-                <h5 class="titulo_publi">Recuerda Los Horarios De Recolección</h5>
+                <h5 class="titulo_publi">
+                  Recuerda Los Horarios De Recolección
+                </h5>
                 <p>
-                  ¡Bogotá, unidos por una ciudad más limpia!  Recordamos la importancia de sacar tus residuos en los horarios y días establecidos por tu operador de recolección. Pequeñas acciones, grandes cambios. Al disponer correctamente nuestros desechos, contribuimos a una Bogotá más bonita, saludable y sostenible para todos. ¡Consulta los horarios de tu sector y súmate a la ola de civismo ambiental! #BogotaLimpia #RecoleccionDeResiduos #CiudadSostenible #CompromisoCiudadano
+                  ¡Bogotá, unidos por una ciudad más limpia! Recordamos la
+                  importancia de sacar tus residuos en los horarios y días
+                  establecidos por tu operador de recolección. Pequeñas
+                  acciones, grandes cambios. Al disponer correctamente nuestros
+                  desechos, contribuimos a una Bogotá más bonita, saludable y
+                  sostenible para todos. ¡Consulta los horarios de tu sector y
+                  súmate a la ola de civismo ambiental! #BogotaLimpia
+                  #RecoleccionDeResiduos #CiudadSostenible #CompromisoCiudadano
                 </p>
-                <div class="iconos_f_publi">
-                  <div class="iconos_publi">
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-thumbs-up"></i>
-                    <i class="fas fa-thumbs-down"></i>
+                <div class="iconos_f_publi ">
+                  <div class="iconos_publi d-flex gap-2">
+                      <!-- BOTÓN DE INTERACCIÓN -->
+                      <!-- Corazón -->
+                      <span class="position-relative">
+                        <i class="fas fa-heart icon-btn" data-type="heart" style="cursor:pointer; font-size:1.5rem;"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                      </span>
+                      <!-- Like -->
+                      <span class="position-relative">
+                        <i class="fas fa-thumbs-up icon-btn" data-type="like" style="cursor:pointer; font-size:1.5rem;"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">0</span>
+                      </span>
+                      <!-- Dislike -->
+                      <span class="position-relative">
+                        <i class="fas fa-thumbs-down icon-btn" data-type="dislike" style="cursor:pointer; font-size:1.5rem;"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">0</span>
+                      </span>
                     <i class="fas fa-share-nodes"></i>
                     <i class="fas fa-message"></i>
                   </div>
                   <div class="nombre_usuario_publi">
-                    <span>Publicado por: <div id="name_user"></div></span>
+                    <span
+                      >Publicado por: Pedro Cortes
+                      <div id="name_user"></div
+                    ></span>
                   </div>
                 </div>
               </div>
               <hr />
             </div>
           </div>
-            
-            <div class="card px-2 pt-3 mb-5 col-12 col-md-8 col-lg-6">
-              <!-- News block -->
-              <div>
-                <!-- Featured image -->
-                <div
-                  class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
-                  data-mdb-ripple-color="light"
-                >
-                  <img
-                    src="../assets/publicacion2.webp"
-                    class="img-fluid"
-                  />
-                  <a href="#!">
-                    <div
-                      class="mask"
-                      style="background-color: rgba(251, 251, 251, 0.15)"
-                    ></div>
-                  </a>
-                </div>
-                <!-- Article title and description -->
-                <div class="contenido_publi">
-                  <h5 class="titulo_publi">¡Atención San Cristobal!</h5>
-                  <p>
-                    ¿Muebles viejos o electrodomésticos que ya no usas? ¡Este domingo 25 de agosto, únete a la jornada de recolección de residuos voluminosos en San Cristóbal!  
-                    Desde las 9:00 a.m. hasta las 2:00 p.m., tendremos puntos habilitados para que los deseches de forma gratuita y responsable. ¡No los dejes en la calle! Ayúdanos a mantener una San Cristóbal más limpia y ordenada.
-                  </p>
-                  <!-- Iconos Reacciones -->
-                  <div class="iconos_f_publi">                        
-                    <div class="iconos_publi">
-                      <i class="fas fa-heart"></i>
-                      <i class="fas fa-thumbs-up"></i>
-                      <i class="fas fa-thumbs-down"></i>
-                      <i class="fas fa-share-nodes"></i>
-                      <i class="fas fa-message"></i>
-                    </div>
-                    <div class="nombre_usuario_publi">
-                      <span>Publicado por: <div id="name_user"></div></span>
-                    </div>
-                  </div>
-                </div>
-                <hr/>
-              </div>
-            </div> 
-
-        </div>    
+          
+        </div>
         <!-- Cards Publicaciones -->
       </section>
 
-       
       <!-- SLIDE DERECHO -->
       <section class="sect_slide_der">
         <div
@@ -707,19 +760,25 @@
     <!--------------------- PIE DE PAGINA --------------------------->
     <footer>
       <!-- Copyright -->
-      <div class="text-center p-4 ">
+      <div class="text-center p-4">
         © 2025 Copyright:
-       <a class="text-reset fw-bold" href="./index.html">Ambicom.com</a>
-     </div>
+        <a class="text-reset fw-bold" href="./index.html">Ambicom.com</a>
+      </div>
       <!-- Copyright -->
     </footer>
 
-    <!-- Scripts -->
-     <!-- MDB -->
+    <!-- MDB -->
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.1.0/mdb.umd.min.js"
     ></script>
 
-</body>
+    <!-- Vinculación JavaScript -->
+    <script src="../script/navbar.js"></script>
+    <script src="../script/slideIzq.js"></script>
+    <script src="../script/tarjetaPubli.js"></script>
+    <script src="../script/publicaciones.js"></script>
+    <script src="../script/reaccion.js"></script>
+
+  </body>
 </html>

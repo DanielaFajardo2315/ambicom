@@ -47,7 +47,7 @@
           <!-- Collapsible wrapper -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Navbar brand -->
-            <a class="navbar-brand ms-5 mt-2 mt-lg-0" href="#">
+            <a class="navbar-brand ms-5 mt-2 mt-lg-0" href="../pages/index.html">
               <img
                 src="../assets/logoambicom.png"
                 height="50"
@@ -81,17 +81,17 @@
                 >
               </a>
               <ul
-                class="dropdown-menu dropdown-menu-end"
+                class="dropdown-menu dropdown-menu-end list_notif"
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="#">Some news</a>
+                  <a class="dropdown-item" href="#">Hay un nuevo evento</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Another news</a>
+                  <a class="dropdown-item" href="#">@henryV008 le gustó tu publicación</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Tienes notificaciones nuevas</a>
                 </li>
               </ul>
             </div>
@@ -138,6 +138,7 @@
                 data-mdb-ripple-init
                 type="button"
                 class="btn btn-rounded px-3 me-2 boton_navbar"
+                onclick="perfil()"
               >
                 Mi perfil
               </button>
@@ -145,6 +146,7 @@
                 data-mdb-ripple-init
                 type="button"
                 class="btn btn-rounded me-3 boton_navbar"
+                onclick="salir()"
               >
                 Salir
               </button>
@@ -185,6 +187,7 @@
                 <button
                   type="button"
                   class="btn btn-primary btn_buscar"
+                  onclick="buscar()"
                   data-mdb-ripple-init
                 >
                   <i class="fas fa-search"></i>
@@ -192,9 +195,9 @@
               </div>
               <div class="dropdown">
                 <button
-                  class="btn dropdown-toggle lista_filtro"
+                  class="btn dropdown-toggle lista_filtro btnFiltro"
                   type="button"
-                  id="dropdownMenuButton"
+                  id="dropdownMenuButton1"
                   data-mdb-dropdown-init
                   data-mdb-ripple-init
                   aria-expanded="false"
@@ -206,13 +209,13 @@
                   aria-labelledby="dropdownMenuButton"
                 >
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item elementoLista1" href="#"
                       >Recolección de residuos</a
                     >
                   </li>
-                  <li><a class="dropdown-item" href="#">Limpieza</a></li>
+                  <li><a class="dropdown-item elementoLista1" href="#">Limpieza</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Cursos</a>
+                    <a class="dropdown-item elementoLista1" href="#">Cursos</a>
                   </li>
                 </ul>
               </div>
@@ -220,7 +223,7 @@
                 <button
                   class="btn dropdown-toggle lista_filtro"
                   type="button"
-                  id="dropdownMenuButton"
+                  id="dropdownMenuButton2"
                   data-mdb-dropdown-init
                   data-mdb-ripple-init
                   aria-expanded="false"
@@ -231,61 +234,61 @@
                   class="dropdown-menu listas lista_localidades"
                   aria-labelledby="dropdownMenuButton"
                 >
-                  <li><a class="dropdown-item" href="#">Antonio Nariño</a></li>
-                  <li><a class="dropdown-item" href="#">Barrios Unidos</a></li>
+                  <li><a class="dropdown-item elementoLista2" href="#">Antonio Nariño</a></li>
+                  <li><a class="dropdown-item elementoLista2" href="#">Barrios Unidos</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Bosa</a>
+                    <a class="dropdown-item elementoLista2" href="#">Bosa</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Chapinero</a>
+                    <a class="dropdown-item elementoLista2" href="#">Chapinero</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Ciudad Bolívar</a>
+                    <a class="dropdown-item elementoLista2" href="#">Ciudad Bolívar</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Engativá</a>
+                    <a class="dropdown-item elementoLista2" href="#">Engativá</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Fontibón</a>
+                    <a class="dropdown-item elementoLista2" href="#">Fontibón</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Kennedy</a>
+                    <a class="dropdown-item elementoLista2" href="#">Kennedy</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">La Candelaria</a>
+                    <a class="dropdown-item elementoLista2" href="#">La Candelaria</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Los Mártires</a>
+                    <a class="dropdown-item elementoLista2" href="#">Los Mártires</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Puente Aranda</a>
+                    <a class="dropdown-item elementoLista2" href="#">Puente Aranda</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Rafael Uribe Uribe</a>
+                    <a class="dropdown-item elementoLista2" href="#">Rafael Uribe Uribe</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">San Cristobal</a>
+                    <a class="dropdown-item elementoLista2" href="#">San Cristobal</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Santa Fe</a>
+                    <a class="dropdown-item elementoLista2" href="#">Santa Fe</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Suba</a>
+                    <a class="dropdown-item elementoLista2" href="#">Suba</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Sumapaz</a>
+                    <a class="dropdown-item elementoLista2" href="#">Sumapaz</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Teusaquillo</a>
+                    <a class="dropdown-item elementoLista2" href="#">Teusaquillo</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Tunjuelito</a>
+                    <a class="dropdown-item elementoLista2" href="#">Tunjuelito</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Usaquén</a>
+                    <a class="dropdown-item elementoLista2" href="#">Usaquén</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Usme</a>
+                    <a class="dropdown-item elementoLista2" href="#">Usme</a>
                   </li>
                 </ul>
               </div>
@@ -293,7 +296,7 @@
                 <button
                   class="btn dropdown-toggle lista_filtro"
                   type="button"
-                  id="dropdownMenuButton"
+                  id="dropdownMenuButton3"
                   data-mdb-dropdown-init
                   data-mdb-ripple-init
                   aria-expanded="false"
@@ -304,16 +307,16 @@
                   class="dropdown-menu listas"
                   aria-labelledby="dropdownMenuButton"
                 >
-                  <li><a class="dropdown-item" href="#">Escombros</a></li>
-                  <li><a class="dropdown-item" href="#">Madera</a></li>
+                  <li><a class="dropdown-item elementoLista3" href="#">Escombros</a></li>
+                  <li><a class="dropdown-item elementoLista3" href="#">Madera</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Muebles</a>
+                    <a class="dropdown-item elementoLista3" href="#">Muebles</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Tejas plásticas</a>
+                    <a class="dropdown-item elementoLista3" href="#">Tejas plásticas</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Colchones</a>
+                    <a class="dropdown-item elementoLista3" href="#">Colchones</a>
                   </li>
                 </ul>
               </div>
@@ -321,7 +324,7 @@
                 <button
                   class="btn dropdown-toggle lista_filtro"
                   type="button"
-                  id="dropdownMenuButton"
+                  id="dropdownMenuButton4"
                   data-mdb-dropdown-init
                   data-mdb-ripple-init
                   aria-expanded="false"
@@ -332,16 +335,16 @@
                   class="dropdown-menu listas"
                   aria-labelledby="dropdownMenuButton"
                 >
-                  <li><a class="dropdown-item" href="#">Bogotá Limpia</a></li>
-                  <li><a class="dropdown-item" href="#">Promoambiental</a></li>
+                  <li><a class="dropdown-item elementoLista4" href="#">Bogotá Limpia</a></li>
+                  <li><a class="dropdown-item elementoLista4" href="#">Promoambiental</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Lime</a>
+                    <a class="dropdown-item elementoLista4" href="#">Lime</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Ciudad Limpia</a>
+                    <a class="dropdown-item elementoLista4" href="#">Ciudad Limpia</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Área Limpia</a>
+                    <a class="dropdown-item elementoLista4" href="#">Área Limpia</a>
                   </li>
                 </ul>
               </div>
@@ -472,7 +475,7 @@
                   </div>
                   <div class="nombre_usuario_publi">
                     <span
-                      >Publicado por:
+                      >Publicado por: Pedro Cortes
                       <div id="name_user"></div
                     ></span>
                   </div>
@@ -523,7 +526,7 @@
                   </div>
                   <div class="nombre_usuario_publi">
                     <span
-                      >Publicado por:
+                      >Publicado por: Pedro Cortes
                       <div id="name_user"></div
                     ></span>
                   </div>
@@ -577,7 +580,7 @@
                   </div>
                   <div class="nombre_usuario_publi">
                     <span
-                      >Publicado por:
+                      >Publicado por: Pedro Cortes
                       <div id="name_user"></div
                     ></span>
                   </div>
@@ -648,5 +651,9 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.1.0/mdb.umd.min.js"
     ></script>
+
+    <!-- Vinculación JavaScript -->
+     <script src="../script/navbar.js"></script>
+     <script src="../script/slideIzq.js"></script>
   </body>
 </html>

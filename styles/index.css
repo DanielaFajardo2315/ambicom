@@ -35,6 +35,15 @@ body {
     background-color: var(--color-fondoCajas);
 }
 
+.listas_notif a {
+    z-index: 2;
+}
+
+.list_notif {
+    width: auto;
+    border-radius: 10px;
+}
+
 .img_perfil {
     border: 1px solid var(--color-titulos);
 }
@@ -171,6 +180,7 @@ main {
 
 .sect_slide_der {
     margin-right: 8px;
+    z-index: 1;
 }
 
 .contenedor_eventos {

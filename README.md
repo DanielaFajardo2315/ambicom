@@ -7,6 +7,7 @@
 Nuestra misión es conectar a personas interesadas en el medio ambiente, promoviendo campañas de reciclaje y eventos de disposición responsable a través de la interacción de una comunidad. <br>
 Los usuarios pueden compartir información sobre campañas de recolección, estar informados de fechas y eventos en sus localidades y/o sectores, también pueden aprender sobre el manejo y correcta disposición de residuos sólidos voluminosos.
 </p>
+
 <h2 style="text-align: center; color: #3d8232;">Características principales</h2>
 <p style="text-align: justify;">Este proyecto se centra en la implementación del diseño de interfaz de usuario y la simulación de funcionalidades clave. Las principales características incluyen:
 </p>
@@ -36,6 +37,20 @@ Los usuarios pueden compartir información sobre campañas de recolección, esta
         </ul>
     </li>
 </ul>
+<hr style="background-color: #3d8232">
+
+<h2 style="text-align: center; color: #3d8232;">Mockups del proyecto</h2>
+<h6 style="color: #123718;">Formularios de ingreso y registro</h6>
+<img src="./assets/mockup_formularios.png" alt="Imagen Mockup formularios"/>
+<h6 style="color: #123718;">Página de inicio</h6>
+<img src="./assets/mockup_inicio.png" lt="Imagen Mockup página de inicio"/>
+<h6 style="color: #123718;">Página de publicaciones</h6>
+<img src="./assets/mockup_publicaciones.png" lt="Imagen Mockup página de publicaciones"/>
+<h6 style="color: #123718;">Página de perfil de usuario</h6>
+<img src="./assets/mockup_perfil.png" lt="Imagen Mockup página de perfil de usuario"/>
+<br>
+<br>
+
 <div style="margin: auto; padding: 20px; background-color: #f0c05e; border-radius: 20px;">
     <h3 style="color: #3d8232;">Tecnologías Utilizadas</h3>
     <ul>
@@ -46,6 +61,7 @@ Los usuarios pueden compartir información sobre campañas de recolección, esta
         <li><strong>CSS:</strong> Creación de estilos propios para diferentes componentes.</li>
     </ul>
 </div>
+
 <h2 style="text-align: center; color: #3d8232;">Estructura del repositorio</h2>
 <p style="text-align: justify;">El proyecto se compone de los siguientes archivos y carpetas, organizados para facilitar el desarrollo:
 </p>
@@ -75,6 +91,7 @@ Los usuarios pueden compartir información sobre campañas de recolección, esta
         </ul>
     </li>
 </ul>
+
 <div style="border: 2px solid #f0c05e; border-radius: 20px;">
     <h4 style="text-align: center; color: #3d8232;">¿Cómo ejecutar el proyecto?</h4>
     <ol>
@@ -89,6 +106,7 @@ Los usuarios pueden compartir información sobre campañas de recolección, esta
         </li>
     </ol>
 </div>
+
 <footer style="background-color: #9dbb89; width: 100%; padding: 10px; margin-top: 20px;">
 <h6 style="color: #123718; text-align: center">Autores</h6>
 <p style="text-align: center">L. Daniela Fajardo Ordoñez<br>
